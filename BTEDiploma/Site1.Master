@@ -1,0 +1,234 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.Master.cs" Inherits="BTEDiploma.Site1" %>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <!-- Head content  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - BTE Examination System</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/site.css" rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- FontAwesome (for icons like fa-user-graduate) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body class="min-vh-100 d-flex flex-column">
+    <form runat="server">
+        <asp:ScriptManager runat="server"></asp:ScriptManager>
+        
+        <!-- Header Banner remains the same -->
+        <!-- Header Banner -->
+       <div class="header-banner" style="background: linear-gradient(to right, #0b355d, #1a4b8c); padding: 12px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <div class="container" style="max-width: 1140px;">
+        <div class="row align-items-center">
+            <!-- Left Logo - Elegant framing -->
+            <div class="col-md-2 text-center text-md-start">
+                <div style="background: white; padding: 8px; border-radius: 4px; display: inline-block; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <img src='<%= ResolveUrl("~/images/kar_logo.jpg") %>' 
+                         alt="BTE Logo" 
+                         style="height: 70px; width: auto; object-fit: contain;"/>
+                </div>
+            </div>
+<!-- Center Headings - Prominent and elegant -->
+<div class="col-md-8 text-center">
+    <div style="border-left: 2px solid rgba(255,255,255,0.3); border-right: 2px solid rgba(255,255,255,0.3); padding: 0 20px; margin: 0 10px;">
+        <h1 class="kannada-text mb-1" style="font-size: 2.6rem; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.2); font-weight: 700;">
+            ತಾಂತ್ರಿಕ ಪರೀಕ್ಷಾ ಮಂಡಳಿ,ಕರ್ನಾಟಕ
+        </h1>
+        <h2 class="mb-0" style="font-size: 1.6rem; color: rgba(255,255,255,0.9); letter-spacing: 1px; font-weight: 300; text-transform: uppercase;">
+            Board of Technical Examination, Karnataka
+        </h2>
+    </div>
+</div>
+
+            <!-- Right Logo - Mirror of left -->
+            <div class="col-md-2 text-center text-md-end">
+                <div style="background: white; padding: 8px; border-radius: 4px; display: inline-block; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <img src='<%= ResolveUrl("~/images/dte_kar.jpg") %>' 
+                         alt="BTE Logo" 
+                         style="height: 70px; width: auto; object-fit: contain;"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+     <!-- Navigation with role-based controls -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: #2a7f62; padding: 8px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <% 
+              int userType = -1;
+             if (Session["UserType"] != null)
+             {
+                 int.TryParse(Session["UserType"].ToString(), out userType);
+             }
+        %>
+
+            <ul class="navbar-nav" id="navDynamicMenus" runat="server" style="gap: 0.5rem; align-items: center;">
+                        <li id="curriculumItem" runat="server">
+                            <a class="dropdown-item" href="https://dtek.karnataka.gov.in/info-2/Diploma+Syllabus/C-25+revised+Diploma+-+Post+Diploma+curricula/en" style="font-size: 1rem; padding: 8px 16px;">
+                                <i class="fas fa-book me-2"></i> Curriculum
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- User Info and Logout - Right Aligned -->
+            <div class="ms-auto d-flex align-items-center" style="gap: 1rem;">
+                <div class="text-white text-end" style="font-size: 0.95rem;">
+                    <div>
+                        <i class="fas fa-user-circle me-1"></i> 
+                        <asp:Label ID="lblUserName" runat="server" />
+                    </div>
+                    <div>
+                        <i class="fas fa-university me-1"></i> 
+                        <asp:Label ID="lblCollegeName" runat="server" />
+                    </div>
+                </div>
+
+                <asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click" 
+                    class="btn btn-outline-light" style="font-size: 0.95rem; padding: 6px 12px; border-radius: 4px;">
+                    <i class="fas fa-sign-out-alt me-1"></i> Logout
+                </asp:LinkButton>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Add hover effects -->
+<style>
+    .nav-link {
+        transition: all 0.2s ease;
+    }
+    .nav-link:hover {
+        background: rgba(255,255,255,0.15);
+        transform: translateY(-1px);
+    }
+    .dropdown-item {
+        transition: all 0.2s ease;
+    }
+    .dropdown-item:hover {
+        background: #e9ecef;
+        padding-left: 20px !important;
+    }
+    .btn-outline-light:hover {
+        background: rgba(255,255,255,0.1);
+    }
+</style>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+           <!-- Main Page Content -->
+        
+        <!-- Footer -->
+     <footer class="footer" style="background: linear-gradient(135deg, #0b355d 0%, #1a4b8c 100%); color: white; padding: 25px 0 15px; margin-top: 30px; font-size: 0.9rem;">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-6 mb-3">
+                <h5 style="font-weight: 600; font-size: 1rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 6px; margin-bottom: 15px;">
+                    <i class="fas fa-headset me-2"></i>Contact Information
+                </h5>
+                <ul class="list-unstyled" style="margin-bottom: 0;">
+                    <li class="mb-2">
+                        <i class="fas fa-phone-alt me-2"></i> 
+                        <strong>Phone:</strong> +91 80 2221 2465, +91 80 2235 7072
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-envelope me-2"></i> 
+                        <strong>Email:</strong> 
+                        <a href="mailto:info@dte.karnataka.gov.in" style="color: white; text-decoration: underline;">
+                            info@dte.karnataka.gov.in
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt me-2"></i> 
+                        <strong>Address:</strong> 
+                        <a href="https://maps.app.goo.gl/7yf4Ny9hJB2PwrjQ6" target="DTE Bengaluru" 
+                           style="color: white; text-decoration: underline;"
+                           onmouseover="this.style.color='#f5a623'" 
+                           onmouseout="this.style.color='white'">
+                            Department of Technical Education, Palace Road, Bengaluru - 560001
+                            <i class="fas fa-external-link-alt ms-1" style="font-size: 0.6rem;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-6 mb-3">
+                <h5 style="font-weight: 600; font-size: 1rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 6px; margin-bottom: 15px;">
+                    <i class="fas fa-link me-2"></i>Quick Links
+                </h5>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled" style="margin-bottom: 0;">
+                            <li class="mb-1"><a href="#" style="color: white; text-decoration: none;">Examination Schedule</a></li>
+                            <li class="mb-1"><a href="#" style="color: white; text-decoration: none;">Results Portal</a></li>
+                            <li><a href="#" style="color: white; text-decoration: none;">Syllabus</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled" style="margin-bottom: 0;">
+                            <li class="mb-1"><a href="#" style="color: white; text-decoration: none;">Circulars</a></li>
+                            <li class="mb-1"><a href="#" style="color: white; text-decoration: none;">Student Grievance</a></li>
+                            <li><a href="#" style="color: white; text-decoration: none;">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="row mt-3">
+            <div class="col-12 text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px;">
+                <p class="mb-0" style="font-size: 0.8rem; color: rgba(255,255,255,0.7);">
+                    &copy; <%= DateTime.Now.Year %> Department of Technical Education, Karnataka. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Font Awesome for icons -->
+    </form>
+
+  
+  <script>
+    var sessionTimeout = 15 * 60 * 1000; // 15 minutes
+    var sessionTimer = setTimeout(function () {
+        window.location.href = '<%= ResolveUrl("~/SessionExpired.aspx") %>';
+    }, sessionTimeout);
+
+    function resetTimer() {
+        clearTimeout(sessionTimer);
+        sessionTimer = setTimeout(function () {
+            window.location.href = '<%= ResolveUrl("~/SessionExpired.aspx") %>';
+        }, sessionTimeout);
+    }
+
+    document.addEventListener("mousemove", resetTimer, false);
+    document.addEventListener("keydown", resetTimer, false);
+  </script>
+</body>
+</html>

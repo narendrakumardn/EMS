@@ -1,0 +1,490 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|c:\\users\\pmudt\\desktop\\ems_bakup\\btediploma\\btediploma\\admin\\addexamfeedetails.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\admin\\addexamfeedetails.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\admin\\addexamfeedetails.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\admin\\addexamfeedetails.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\helper\\examfeedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\helper\\examfeedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\site1.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\site1.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\login\\dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\login\\dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\login\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\login\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\login\\login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\login\\login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\admin\\managesystemdata.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\admin\\managesystemdata.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\admin\\managesystemdata.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\admin\\managesystemdata.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\admin\\courses.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\admin\\courses.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\helper\\managesystemdatadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\helper\\managesystemdatadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\admin\\createcurriculumscheme.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\admin\\createcurriculumscheme.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\admin\\createcurriculumscheme.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\admin\\createcurriculumscheme.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\login\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\login\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\login\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\login\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\admin\\examcreation.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\admin\\examcreation.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\admin\\examtimetableadd.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\admin\\examtimetableadd.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\admin\\createprogram.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\admin\\createprogram.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\helper\\dashboarddao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\helper\\dashboarddao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\admin\\institutiontoprogrammapping.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\admin\\institutiontoprogrammapping.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\helper\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\helper\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\admin\\managesystemdatadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\admin\\managesystemdatadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\forms\\admindcb.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\forms\\admindcb.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\forms\\dcb.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\forms\\dcb.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\forms\\admindcb.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\forms\\admindcb.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\forms\\dcb.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\forms\\dcb.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\btediploma\\helper\\atsdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01AFBA3-EE5D-4418-A77A-A2EBD5BCD9F4}|BTEDiploma\\BTEDiploma.csproj|solutionrelative:btediploma\\helper\\atsdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddExamFeeDetails.aspx",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\AddExamFeeDetails.aspx",
+              "RelativeDocumentMoniker": "BTEDiploma\\admin\\AddExamFeeDetails.aspx",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\AddExamFeeDetails.aspx",
+              "RelativeToolTip": "BTEDiploma\\admin\\AddExamFeeDetails.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-05T09:49:25.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddExamFeeDetails.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\AddExamFeeDetails.aspx.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\admin\\AddExamFeeDetails.aspx.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\AddExamFeeDetails.aspx.cs",
+              "RelativeToolTip": "BTEDiploma\\admin\\AddExamFeeDetails.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEBAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T09:50:40.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\login\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\login\\Login.aspx.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\login\\Login.aspx.cs",
+              "RelativeToolTip": "BTEDiploma\\login\\Login.aspx.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwGcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T07:14:41.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dashboard.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\login\\Dashboard.aspx.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\login\\Dashboard.aspx.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\login\\Dashboard.aspx.cs",
+              "RelativeToolTip": "BTEDiploma\\login\\Dashboard.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T07:38:28.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Site1.Master.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Site1.Master.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\Site1.Master.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Site1.Master.cs",
+              "RelativeToolTip": "BTEDiploma\\Site1.Master.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCUAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T10:21:01.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExamFeeDAO.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Helper\\ExamFeeDAO.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\Helper\\ExamFeeDAO.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Helper\\ExamFeeDAO.cs",
+              "RelativeToolTip": "BTEDiploma\\Helper\\ExamFeeDAO.cs",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAkwP8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T10:59:24.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ManageSystemData.aspx",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\ManageSystemData.aspx",
+              "RelativeDocumentMoniker": "BTEDiploma\\admin\\ManageSystemData.aspx",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\ManageSystemData.aspx",
+              "RelativeToolTip": "BTEDiploma\\admin\\ManageSystemData.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-07-29T09:43:49.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ManagesystemdataDAO.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Helper\\ManagesystemdataDAO.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\Helper\\ManagesystemdataDAO.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Helper\\ManagesystemdataDAO.cs",
+              "RelativeToolTip": "BTEDiploma\\Helper\\ManagesystemdataDAO.cs",
+              "ViewState": "AgIAACcBAAAAAAAAAAAuwDkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T05:35:14.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\login\\Login.aspx.designer.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\login\\Login.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\login\\Login.aspx.designer.cs",
+              "RelativeToolTip": "BTEDiploma\\login\\Login.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T06:44:19.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ManageSystemData.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\ManageSystemData.aspx.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\admin\\ManageSystemData.aspx.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\ManageSystemData.aspx.cs",
+              "RelativeToolTip": "BTEDiploma\\admin\\ManageSystemData.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T09:48:14.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Dashboard.aspx",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\login\\Dashboard.aspx",
+              "RelativeDocumentMoniker": "BTEDiploma\\login\\Dashboard.aspx",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\login\\Dashboard.aspx",
+              "RelativeToolTip": "BTEDiploma\\login\\Dashboard.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-01T05:26:13.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Courses.aspx",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\Courses.aspx",
+              "RelativeDocumentMoniker": "BTEDiploma\\admin\\Courses.aspx",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\Courses.aspx",
+              "RelativeToolTip": "BTEDiploma\\admin\\Courses.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-06T08:45:32.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateCurriculumScheme.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\CreateCurriculumScheme.aspx.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\admin\\CreateCurriculumScheme.aspx.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\CreateCurriculumScheme.aspx.cs",
+              "RelativeToolTip": "BTEDiploma\\admin\\CreateCurriculumScheme.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T08:39:31.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\login\\Login.aspx",
+              "RelativeDocumentMoniker": "BTEDiploma\\login\\Login.aspx",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\login\\Login.aspx",
+              "RelativeToolTip": "BTEDiploma\\login\\Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-02T06:41:07.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateCurriculumScheme.aspx",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\CreateCurriculumScheme.aspx",
+              "RelativeDocumentMoniker": "BTEDiploma\\admin\\CreateCurriculumScheme.aspx",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\CreateCurriculumScheme.aspx",
+              "RelativeToolTip": "BTEDiploma\\admin\\CreateCurriculumScheme.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-04T09:50:27.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Site1.Master",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Site1.Master",
+              "RelativeDocumentMoniker": "BTEDiploma\\Site1.Master",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Site1.Master",
+              "RelativeToolTip": "BTEDiploma\\Site1.Master",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-04T06:58:32.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ExamCreation.aspx",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\ExamCreation.aspx",
+              "RelativeDocumentMoniker": "BTEDiploma\\admin\\ExamCreation.aspx",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\ExamCreation.aspx",
+              "RelativeToolTip": "BTEDiploma\\admin\\ExamCreation.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-05T10:42:55.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ExamTimetableadd.aspx",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\ExamTimetableadd.aspx",
+              "RelativeDocumentMoniker": "BTEDiploma\\admin\\ExamTimetableadd.aspx",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\ExamTimetableadd.aspx",
+              "RelativeToolTip": "BTEDiploma\\admin\\ExamTimetableadd.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-07-30T08:35:49.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CreateProgram.aspx",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\CreateProgram.aspx",
+              "RelativeDocumentMoniker": "BTEDiploma\\admin\\CreateProgram.aspx",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\CreateProgram.aspx",
+              "RelativeToolTip": "BTEDiploma\\admin\\CreateProgram.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-04T09:52:34.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DashboardDAO.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Helper\\DashboardDAO.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\Helper\\DashboardDAO.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Helper\\DashboardDAO.cs",
+              "RelativeToolTip": "BTEDiploma\\Helper\\DashboardDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T05:26:31.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "InstitutionToProgramMapping.aspx",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\InstitutionToProgramMapping.aspx",
+              "RelativeDocumentMoniker": "BTEDiploma\\admin\\InstitutionToProgramMapping.aspx",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\InstitutionToProgramMapping.aspx",
+              "RelativeToolTip": "BTEDiploma\\admin\\InstitutionToProgramMapping.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-01T05:43:06.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SQLHelper.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Helper\\SQLHelper.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\Helper\\SQLHelper.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Helper\\SQLHelper.cs",
+              "RelativeToolTip": "BTEDiploma\\Helper\\SQLHelper.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAWwDEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T11:05:01.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DCB.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\forms\\DCB.aspx.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\forms\\DCB.aspx.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\forms\\DCB.aspx.cs",
+              "RelativeToolTip": "BTEDiploma\\forms\\DCB.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T11:03:16.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ManageSystemDataDAO.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\ManageSystemDataDAO.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\admin\\ManageSystemDataDAO.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\admin\\ManageSystemDataDAO.cs",
+              "RelativeToolTip": "BTEDiploma\\admin\\ManageSystemDataDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T07:35:44.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Web.config",
+              "RelativeDocumentMoniker": "BTEDiploma\\Web.config",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Web.config",
+              "RelativeToolTip": "BTEDiploma\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-29T09:37:42.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AdminDCB.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\forms\\AdminDCB.aspx.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\forms\\AdminDCB.aspx.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\forms\\AdminDCB.aspx.cs",
+              "RelativeToolTip": "BTEDiploma\\forms\\AdminDCB.aspx.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T10:59:55.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AdminDCB.aspx",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\forms\\AdminDCB.aspx",
+              "RelativeDocumentMoniker": "BTEDiploma\\forms\\AdminDCB.aspx",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\forms\\AdminDCB.aspx",
+              "RelativeToolTip": "BTEDiploma\\forms\\AdminDCB.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-07-29T10:31:57.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DCB.aspx",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\forms\\DCB.aspx",
+              "RelativeDocumentMoniker": "BTEDiploma\\forms\\DCB.aspx",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\forms\\DCB.aspx",
+              "RelativeToolTip": "BTEDiploma\\forms\\DCB.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-07-29T11:06:27.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ATSDao.cs",
+              "DocumentMoniker": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Helper\\ATSDao.cs",
+              "RelativeDocumentMoniker": "BTEDiploma\\Helper\\ATSDao.cs",
+              "ToolTip": "C:\\Users\\pmudt\\Desktop\\EMS_bakup\\BTEDiploma\\BTEDiploma\\Helper\\ATSDao.cs",
+              "RelativeToolTip": "BTEDiploma\\Helper\\ATSDao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T09:37:36.906Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

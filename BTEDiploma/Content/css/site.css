@@ -1,0 +1,68 @@
+﻿/* Header Styles */
+.header-banner {
+    background: url('../images/vidhana-soudha-banner.jpg') center/cover;
+    min-height: 180px;
+    position: relative;
+    color: white;
+}
+
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.kannada-text {
+    font-family: 'Kannada', 'Tunga', sans-serif;
+    font-size: 1.8rem;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #4361ee;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.dropdown-menu {
+    background-color: #3f37c9;
+}
+
+.dropdown-item {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+    .dropdown-item:hover {
+        background-color: #4cc9f0;
+        color: white;
+    }
+
+/* Footer */
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 2rem 0;
+}
+
+.user-info {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-banner {
+        min-height: 150px;
+    }
+
+    .kannada-text {
+        font-size: 1.4rem;
+    }
+}

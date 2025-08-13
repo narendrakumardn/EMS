@@ -1,0 +1,74 @@
+﻿body {
+    background-color: #e6f2ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.login-left {
+    background: url('/images/karnataka_logo.jpg') center/cover;
+    min-height: 400px;
+    position: relative;
+}
+
+.login-right {
+    background: url('../images/dtelogo.jpg') center/cover;
+    min-height: 400px;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.bte-kannada {
+    font-family: 'Kannada', 'Tunga', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.form-container {
+    padding: 2rem;
+}
+
+.user-type-indicator {
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    color: #4361ee;
+    font-weight: 500;
+}
+
+.captcha-box {
+    display: inline-block !important;
+    width: 100px !important;
+    height: 40px !important;
+    background: linear-gradient(to right, orange, red) !important;
+    font-size: 22px !important;
+    text-align: center !important;
+    line-height: 40px !important;
+    font-weight: bold !important;
+    color: white !important;
+    border-radius: 8px !important;
+    user-select: none;
+}
+
+
+.captcha-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

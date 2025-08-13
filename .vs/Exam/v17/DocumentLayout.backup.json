@@ -1,0 +1,337 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB148474-B2B1-45A7-82E0-16E333D9ECC3}|Daos\\Daos.csproj|c:\\users\\lenovo\\source\\repos\\exam\\exam\\daos\\usertypedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB148474-B2B1-45A7-82E0-16E333D9ECC3}|Daos\\Daos.csproj|solutionrelative:daos\\usertypedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\exam\\adminutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|solutionrelative:exam\\adminutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\exam\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|solutionrelative:exam\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Exam||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\exam\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|solutionrelative:exam\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\exam\\applicationstatus.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|solutionrelative:exam\\applicationstatus.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\exam\\sexp.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|solutionrelative:exam\\sexp.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\exam\\cd\\dashboardadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|solutionrelative:exam\\cd\\dashboardadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\exam\\cd\\dashboardadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|solutionrelative:exam\\cd\\dashboardadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB148474-B2B1-45A7-82E0-16E333D9ECC3}|Daos\\Daos.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\daos\\dcbdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB148474-B2B1-45A7-82E0-16E333D9ECC3}|Daos\\Daos.csproj|solutionrelative:daos\\dcbdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB148474-B2B1-45A7-82E0-16E333D9ECC3}|Daos\\Daos.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\daos\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB148474-B2B1-45A7-82E0-16E333D9ECC3}|Daos\\Daos.csproj|solutionrelative:daos\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\exam\\cd\\dashboardadmin1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|solutionrelative:exam\\cd\\dashboardadmin1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\exam\\cd\\addstaffs.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|solutionrelative:exam\\cd\\addstaffs.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB148474-B2B1-45A7-82E0-16E333D9ECC3}|Daos\\Daos.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\daos\\collegedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB148474-B2B1-45A7-82E0-16E333D9ECC3}|Daos\\Daos.csproj|solutionrelative:daos\\collegedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\exam\\cd\\addstaffs.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|solutionrelative:exam\\cd\\addstaffs.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\exam\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C9F27D57-526B-47F2-879D-2FD16C7B36B8}|Exam\\Exam.csproj|solutionrelative:exam\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B691FB2-FFE7-41D7-872A-D7077B15E7AA}|BeanBusiness\\BeanBusiness.csproj|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\beanbusiness\\loginbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B691FB2-FFE7-41D7-872A-D7077B15E7AA}|BeanBusiness\\BeanBusiness.csproj|solutionrelative:beanbusiness\\loginbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Beans\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Beans\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 411,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Exam",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\Exam.csproj",
+              "RelativeDocumentMoniker": "Exam\\Exam.csproj",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\Exam.csproj",
+              "RelativeToolTip": "Exam\\Exam.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-17T14:15:27.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Exam\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\Global.asax.cs",
+              "RelativeToolTip": "Exam\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T13:15:59.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserTypeDao.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Daos\\UserTypeDao.cs",
+              "RelativeDocumentMoniker": "Daos\\UserTypeDao.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Daos\\UserTypeDao.cs",
+              "RelativeToolTip": "Daos\\UserTypeDao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T17:51:37.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminUtil.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\AdminUtil.cs",
+              "RelativeDocumentMoniker": "Exam\\AdminUtil.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\AdminUtil.cs",
+              "RelativeToolTip": "Exam\\AdminUtil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T15:02:27.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Site1.Master",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\Site1.Master",
+              "RelativeDocumentMoniker": "Exam\\Site1.Master",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\Site1.Master",
+              "RelativeToolTip": "Exam\\Site1.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-15T16:53:40.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Beans\\packages.config",
+              "RelativeDocumentMoniker": "Beans\\packages.config",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Beans\\packages.config",
+              "RelativeToolTip": "Beans\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-17T14:12:55.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationStatus.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\ApplicationStatus.aspx",
+              "RelativeDocumentMoniker": "Exam\\ApplicationStatus.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\ApplicationStatus.aspx",
+              "RelativeToolTip": "Exam\\ApplicationStatus.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-17T13:15:52.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Sexp.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\Sexp.aspx",
+              "RelativeDocumentMoniker": "Exam\\Sexp.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\Sexp.aspx",
+              "RelativeToolTip": "Exam\\Sexp.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-17T13:15:46.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DashboardAdmin.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\cd\\DashboardAdmin.aspx",
+              "RelativeDocumentMoniker": "Exam\\cd\\DashboardAdmin.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\cd\\DashboardAdmin.aspx",
+              "RelativeToolTip": "Exam\\cd\\DashboardAdmin.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-15T14:17:00.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CollegeDao.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Daos\\CollegeDao.cs",
+              "RelativeDocumentMoniker": "Daos\\CollegeDao.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Daos\\CollegeDao.cs",
+              "RelativeToolTip": "Daos\\CollegeDao.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwMYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T14:36:10.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DashboardAdmin.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\cd\\DashboardAdmin.aspx.cs",
+              "RelativeDocumentMoniker": "Exam\\cd\\DashboardAdmin.aspx.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\cd\\DashboardAdmin.aspx.cs",
+              "RelativeToolTip": "Exam\\cd\\DashboardAdmin.aspx.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAswFcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T14:20:02.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddStaffs.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\cd\\AddStaffs.aspx",
+              "RelativeDocumentMoniker": "Exam\\cd\\AddStaffs.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\cd\\AddStaffs.aspx",
+              "RelativeToolTip": "Exam\\cd\\AddStaffs.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-15T13:39:20.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DCBDao.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Daos\\DCBDao.cs",
+              "RelativeDocumentMoniker": "Daos\\DCBDao.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Daos\\DCBDao.cs",
+              "RelativeToolTip": "Daos\\DCBDao.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAkwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T15:13:17.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DashboardAdmin1.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\cd\\DashboardAdmin1.aspx",
+              "RelativeDocumentMoniker": "Exam\\cd\\DashboardAdmin1.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\cd\\DashboardAdmin1.aspx",
+              "RelativeToolTip": "Exam\\cd\\DashboardAdmin1.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-16T02:41:50.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Daos\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "Daos\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Daos\\DatabaseHelper.cs",
+              "RelativeToolTip": "Daos\\DatabaseHelper.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T15:28:09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AddStaffs.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\cd\\AddStaffs.aspx.cs",
+              "RelativeDocumentMoniker": "Exam\\cd\\AddStaffs.aspx.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\cd\\AddStaffs.aspx.cs",
+              "RelativeToolTip": "Exam\\cd\\AddStaffs.aspx.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T15:08:02.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\Web.config",
+              "RelativeDocumentMoniker": "Exam\\Web.config",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\Exam\\Web.config",
+              "RelativeToolTip": "Exam\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-15T03:36:26.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\BeanBusiness\\LoginBusiness.cs",
+              "RelativeDocumentMoniker": "BeanBusiness\\LoginBusiness.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\exam\\Exam\\BeanBusiness\\LoginBusiness.cs",
+              "RelativeToolTip": "BeanBusiness\\LoginBusiness.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T03:24:53.19Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 130,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
