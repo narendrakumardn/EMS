@@ -2,7 +2,6 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
-using BTEDiploma.Helper;
 
 namespace BTEDiploma.sqlhelper
 {
@@ -14,7 +13,7 @@ namespace BTEDiploma.sqlhelper
         public DataSet GetExamHierarchyDropdown()
         {
             using (var con = new SqlConnection(connStr))
-            using (var cmd = new SqlCommand("sp_Get_ExamHierarchyDropdown", con))
+            using (var cmd = new SqlCommand("usp_GetExamHierarchy", con))
             using (var da = new SqlDataAdapter(cmd))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -40,18 +39,23 @@ namespace BTEDiploma.sqlhelper
         private static string Quote(string s) => "'" + s.Replace("'", "''") + "'";
 
         // 2) Programmes list (per your instruction: use SP_Get_Program_List)
-        public DataTable GetProgrammeList()
+        public DataTable GetProgrammeList(int instituteCode)
         {
             using (var con = new SqlConnection(connStr))
-            using (var cmd = new SqlCommand("SP_Get_Program_List", con))
+            using (var cmd = new SqlCommand("SP_Get_Program_List_ByInstitution", con))
             using (var da = new SqlDataAdapter(cmd))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
+
+                // Pass instituteCode as parameter
+                cmd.Parameters.AddWithValue("@Inst_Code", instituteCode);
+
                 var dt = new DataTable();
                 da.Fill(dt);
                 return dt;
             }
         }
+
 
         // 3) Payment Modes
         public DataTable GetPaymentModes()
@@ -65,27 +69,6 @@ namespace BTEDiploma.sqlhelper
                 return dt;
             }
         }
-        public bool PaymentExists(int semHistoryId, int examId, out int paymentId)
-        {
-            paymentId = 0;
-            using (var con = new SqlConnection(connStr))
-            using (var cmd = new SqlCommand(@"SELECT TOP 1 Payment_ID 
-                                      FROM Tb_Exam_Fee_Payment
-                                      WHERE Sem_History_ID = @SemHistoryID 
-                                        AND Exam_ID = @ExamID", con))
-            {
-                cmd.Parameters.AddWithValue("@SemHistoryID", semHistoryId);
-                cmd.Parameters.AddWithValue("@ExamID", examId);
-                con.Open();
-                var result = cmd.ExecuteScalar();
-                if (result != null && result != DBNull.Value)
-                {
-                    paymentId = Convert.ToInt32(result);
-                    return true;
-                }
-                return false;
-            }
-        }
 
         // 4) Students for the selected Programme + Institute + Semester
         // Uses base tables you listed.
@@ -96,7 +79,7 @@ SELECT
     s.Student_ID,
     s.Name AS Student_Name,
     e.Register_Number,
-    se.Student_Sem_History_ID AS Sem_History_ID,
+    se.Student_Semeter_ID AS Sem_History_ID,
     p.Payment_ID,
     p.Exam_ID,
     p.Payment_Date,
@@ -109,22 +92,22 @@ JOIN dbo.Tb_Student_Enrollment e
 JOIN dbo.Tb_Student_Semester se 
     ON se.Enrollment_ID = e.Enrollment_ID
 LEFT JOIN dbo.Tb_Exam_Fee_Payment p
-    ON p.Sem_History_ID = se.Student_Sem_History_ID
+    ON p.Student_Semester_ID = se.Student_Semeter_ID
     AND p.Exam_ID = @Exam_ID
 WHERE e.Program_Code = @Program_Code
   AND e.Institution_Code = @Institution_Code
   AND se.Sem = @Sem
 ORDER BY s.Name;";
 
+
             using (var con = new SqlConnection(connStr))
             using (var cmd = new SqlCommand(sql, con))
             using (var da = new SqlDataAdapter(cmd))
             {
-                cmd.Parameters.AddWithValue("@Program_Code", (object)programmeCode ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@Institution_Code", (object)instituteCode ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@Program_Code", programmeCode ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@Institution_Code", instituteCode ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@Sem", sem);
                 cmd.Parameters.AddWithValue("@Exam_ID", examId);
-
                 var dt = new DataTable();
                 da.Fill(dt);
                 return dt;
@@ -216,42 +199,6 @@ ORDER BY s.Name;";
                 return (rows.Value == DBNull.Value) ? 0 : Convert.ToInt32(rows.Value);
             }
         }
-        public bool UpdateExamMasterData(
-    int examId,
-    string academicYear,
-    int examMonth,
-    int examYear,
-    DateTime academicStartDate,
-    DateTime academicEndDate,
-    decimal regularFee,
-    DateTime dueDate)
-        {
-            using (var con = new SqlConnection(connStr))
-            using (var cmd = new SqlCommand("sp_UpdateExam", con))
-            {
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                cmd.Parameters.AddWithValue("@Exam_ID", examId);
-                cmd.Parameters.AddWithValue("@Academic_Year", academicYear);
-                cmd.Parameters.AddWithValue("@Exam_Month", examMonth);
-                cmd.Parameters.AddWithValue("@Exam_Year", examYear);
-                cmd.Parameters.AddWithValue("@Academic_Start_Date", academicStartDate);
-                cmd.Parameters.AddWithValue("@Academic_End_Date", academicEndDate);
-                cmd.Parameters.AddWithValue("@Regular_Fee", regularFee);
-                cmd.Parameters.AddWithValue("@Due_Date", dueDate);
-
-                try
-                {
-                    con.Open();
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    return rowsAffected > 0;
-                }
-                catch
-                {
-                    return false;
-                }
-            }
-        }
         // 7) Optional: get existing fee payments for a set of Sem_History_IDs (useful for pre-fill)
         public DataTable GetPaymentsByExamAndSemHist(int examId, string semHistIdCsv)
         {
@@ -260,7 +207,7 @@ ORDER BY s.Name;";
             const string sql = @"
 SELECT p.Payment_ID, p.Exam_ID, p.Sem_History_ID, p.Payment_Date, p.Fee_Amount, p.Payment_Mode_ID, p.Transaction_Ref_No
 FROM dbo.Tb_Exam_Fee_Payment p
-JOIN STRING_SPLIT(@SemHistCsv, ',') s ON TRY_CAST(s.value AS INT) = p.Sem_History_ID
+JOIN STRING_SPLIT(@SemHistCsv, ',') s ON TRY_CAST(s.value AS INT) = p.Student_Semester_ID
 WHERE p.Exam_ID = @Exam_ID;";
 
             using (var con = new SqlConnection(connStr))

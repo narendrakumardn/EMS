@@ -48,6 +48,132 @@ namespace BTEDiploma.Helper
             return SQLHelper.ExecuteStoredProcedure("dbo.spGetUserByUsername", parameters);
         }
 
+        public static DataTable GetUserLogin(string userType, string username, string ip)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>
+        {
+            new SqlParameter("@UserType", userType),
+            new SqlParameter("@LoginName", username)
+        };
+
+
+            return SQLHelper.ExecuteStoredProcedure("spGetUserLogin", parameters.ToArray());
+        }
+
+       
+
+        public static bool CheckFirstLoginStudent(string spName, string username)
+        {
+            DataTable dt = SQLHelper.ExecuteStoredProcedure(
+                spName,
+                new SqlParameter[] { new SqlParameter("@Username", username) }
+            );
+
+            return (dt.Rows.Count > 0 && Convert.ToBoolean(dt.Rows[0]["Is_FirstLogin"]));
+        }
+
+        public static bool CheckFirstLoginEmployee(string spName, string username)
+        {
+            DataTable dt = SQLHelper.ExecuteStoredProcedure(
+                spName,
+                new SqlParameter[] { new SqlParameter("@Username", username) }
+            );
+
+            return (dt.Rows.Count > 0 && Convert.ToBoolean(dt.Rows[0]["Is_FirstLogin"]));
+        }
+        public static string GetInstitutionCodeByLoginName(string loginName)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("@LoginName", loginName)
+            };
+
+            DataTable dt = SQLHelper.ExecuteStoredProcedure("spGetInstitutionCodeByLogin", parameters.ToArray());
+
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                return dt.Rows[0]["InstitutionCode"].ToString();
+            }
+
+            return null; // or throw an exception / return "" as needed
+        }
+        public static bool CheckFirstLoginInstitution(string spName, string username)
+        {
+            DataTable dt = SQLHelper.ExecuteStoredProcedure(
+                spName,
+                new SqlParameter[] { new SqlParameter("@Username", username) }
+            );
+
+            if (dt.Rows.Count > 0 && Convert.ToBoolean(dt.Rows[0]["Is_FirstLogin"]))
+                return true;
+            return false;
+        }
+        public static DataTable GetInstitutionDetails(string institutionCode)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>
+    {
+        new SqlParameter("@InstitutionCode", institutionCode)
+    };
+
+            return SQLHelper.ExecuteStoredProcedure("spGetInstitutionDetailsByLogin", parameters.ToArray());
+        }
+        public static string GetInstitutionCodeByEmployeeLogin(string loginName)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("@LoginName", loginName)
+            };
+
+            DataTable dt = SQLHelper.ExecuteStoredProcedure("spGetInstitutionCodeByEmployeeLogin", parameters.ToArray());
+
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                return dt.Rows[0]["Current_Institute_ID"].ToString();
+            }
+
+            return null; // or throw an exception / return "" as needed
+        }
+        public static string GetInstitutionCodeByStudentEnrollment(string loginName)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("@LoginName", loginName)
+            };
+
+            DataTable dt = SQLHelper.ExecuteStoredProcedure("spGetInstitutionCodeByStudentEnrollment", parameters.ToArray());
+
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                return dt.Rows[0]["Institution_Code"].ToString();
+            }
+
+            return null; // or throw an exception / return "" as needed
+        }
+
+            public static DataTable GetStudentDetails(string institutionCode, string username)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>
+        {
+            new SqlParameter("@inst_code", institutionCode),
+            new SqlParameter("@Username", username)
+        };
+
+
+            return SQLHelper.ExecuteStoredProcedure("spGetStudentCollegeDetails", parameters.ToArray());
+        }
+
+
+        public static DataTable GetEmployeeDetails(string institutionCode, string username)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>
+        {
+            new SqlParameter("@inst_code", institutionCode),
+            new SqlParameter("@Username", username)
+        };
+
+
+            return SQLHelper.ExecuteStoredProcedure("spGetEmployeeCollegeDetails", parameters.ToArray());
+        }
         public static DataTable GetUserDetails(string username, string password)
         {
             try

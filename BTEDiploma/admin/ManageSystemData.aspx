@@ -3,7 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <div class="container mt-4">
-    <h3 class="mb-4">Manage System Data</h3>
+    <h3 class="mb-4">   Manage System Data</h3>
     <div class="row g-4">
 
         <!-- Panel 1: Academics -->
@@ -14,8 +14,13 @@
                 </div>
                 <div class="card-body">
                     <ul class="list-unstyled">
+                        <li><a href="Institute.aspx"><i class="fas fa-link me-2"></i> Add Institution</a></li>
                         <li><a href="InstitutionToProgramMapping.aspx"><i class="fas fa-link me-2"></i> Institution–Program Mapping</a></li>
                         <li><a href="ProgramToCourseMapping.aspx"><i class="fas fa-project-diagram me-2"></i> Program–Course Mapping</a></li>
+                       <li> <a href="PCMapping11.aspx"><i class="fas fa-project-diagram me-2"></i> Program–Course Mapping
+                    </a>
+                </li>
+
                     </ul>
                 </div>
             </div>
@@ -47,8 +52,7 @@
                 <div class="card-body">
                     <ul class="list-unstyled">
                          <li><a href="ExamCreation.aspx"><i class="fas fa-clock me-2"></i> Create Exam </a></li>
-                        <li><a href="Addbacklogfee.aspx"><i class="fas fa-clock me-2"></i> Add Backlog Count and Fee </a></li>
-                        <li><a href="AdddueDate.aspx"><i class="fas fa-clock me-2"></i> Add Due date and Late Fine </a></li>
+                        <li><a href="ExamFeeManagement.aspx"><i class="fas fa-clock me-2"></i> Add Backlog Count,Fee and Late Fine </a></li>
                         <li><a href="ExamTimetableadd.aspx"><i class="fas fa-clock me-2"></i> Exam Timetable</a></li>
                     </ul>
                 </div>

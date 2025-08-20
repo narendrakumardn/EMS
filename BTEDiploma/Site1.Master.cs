@@ -48,7 +48,7 @@ namespace BTEDiploma
 
         private void ConfigureMenu()
         {
-            int userType = Convert.ToInt32(Session["UserType"]);
+            int userType = Convert.ToInt32(Session["Institute_Type"]);
 
             DataTable menuItems = DashboardDao.GetMenusByAccessLevel(userType);
 

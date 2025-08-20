@@ -11,7 +11,7 @@ namespace BTEDiploma.admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UserType"] == null || Session["UserType"].ToString() != "10")
+            if (Session["Institute_Type"] == null || Session["Institute_Type"].ToString() != "20")
             {
                 Response.Redirect("~/AccessDenied.aspx");
             }

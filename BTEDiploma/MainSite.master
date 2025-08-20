@@ -1,0 +1,305 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainSite.master.cs" Inherits="BTEDiploma.MainSite" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>BTE Examination System</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        <!-- Page-specific CSS/JS -->
+    </asp:ContentPlaceHolder>
+    
+   <style>
+        :root {
+            --primary-blue: #0d47a1;
+            --dark-blue: #002171;
+            --light-blue: #5472d3;
+            --accent-gold: #ffc107;
+            --gradient-start: #1a237e;
+            --gradient-end: #311b92;
+        }
+        
+        /* Base styles */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 15px 0;
+        }
+        
+        /* Main container */
+        .auth-master {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            z-index: 10;
+        }
+        
+        /* Integrated container with footer */
+        .integrated-container {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            z-index: 5;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Content area */
+        .content-area {
+            padding: 20px;
+        }
+        
+        /* Compact header */
+        .auth-header {
+            text-align: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            position: relative;
+        }
+        
+        .auth-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+        }
+        
+        /* Reduced logo size */
+        .bte-logo {
+            width: 70px;
+            height: 70px;
+            background: var(--primary-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        }
+        
+        .bte-logo i {
+            font-size: 32px;
+            color: var(--accent-gold);
+        }
+        
+        /* Compact typography */
+        .bte-kannada {
+            font-size: 1.8rem;
+            color: var(--primary-blue);
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.2;
+        }
+        
+        .auth-title {
+            font-size: 1.2rem;
+            color: var(--dark-blue);
+            margin: 5px 0 0;
+            font-weight: 600;
+        }
+        
+        /* Minimal spacing form elements */
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            font-weight: 500;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        /* Seamless footer */
+        .seamless-footer {
+            background: #f8f9fa;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            border-radius: 0 0 10px 10px;
+        }
+        
+        .seamless-footer a {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--primary-blue);
+            margin: 0 8px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .seamless-footer a:hover {
+            background: rgba(13, 71, 161, 0.1);
+        }
+        
+        .seamless-footer a i {
+            margin-right: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .seamless-footer a:hover i {
+            transform: translateX(3px);
+        }
+        
+        /* Background elements */
+        .wave {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z" fill="rgba(255,255,255,0.07)"/></svg>');
+            background-size: 1200px 80px;
+            animation: wave 12s linear infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        @keyframes wave {
+            0% { background-position-x: 0; }
+            100% { background-position-x: 1200px; }
+        }
+        
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .content-area {
+                padding: 25px;
+            }
+            
+            .bte-logo {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .bte-logo i {
+                font-size: 36px;
+            }
+            
+            .bte-kannada {
+                font-size: 2.2rem;
+            }
+            
+            .auth-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    
+   <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+     
+    <div class="auth-master">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="integrated-container">
+                        <div class="content-area">
+                            <!-- Header -->
+                            <div class="auth-header">
+                                <div class="bte-logo">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="bte-kannada">ತಾಂತ್ರಿಕ ಪರೀಕ್ಷಾ ಮಂಡಳಿ</div>
+                                <h2 class="auth-title">
+                                    BOARD OF TECHNICAL EXAMINATION, KARNATAKA
+                                </h2>
+                                <h3 style="font-weight: 500; color: #555;">
+                                    <asp:ContentPlaceHolder ID="PageTitle" runat="server" />
+                                </h3>
+                            </div>
+                             
+                            <!-- Page Content -->
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                        </div>
+                        
+                        <!-- Seamless Footer -->
+                        <div class="seamless-footer">
+                            <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/login/Login.aspx">
+                                <i class="fas fa-home"></i> Back to Home
+                            </asp:HyperLink>
+                            <asp:HyperLink ID="lnkLogin" runat="server" NavigateUrl="~/login/Login.aspx">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </asp:HyperLink>
+                            <asp:ContentPlaceHolder ID="AdditionalLinks" runat="server" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Create background particles
+        document.addEventListener('DOMContentLoaded', function () {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                const size = Math.random() * 8 + 2;
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                const animationDuration = Math.random() * 20 + 10;
+                const animationDelay = Math.random() * 5;
+                const hue = Math.random() * 360;
+
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+                particle.style.animationDuration = `${animationDuration}s`;
+                particle.style.animationDelay = `${animationDelay}s`;
+                particle.style.backgroundColor = `hsla(${hue}, 70%, 70%, 0.3)`;
+
+                particlesContainer.appendChild(particle);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -20,16 +20,12 @@
                     </div>
 
                     <div class="col-md-4">
-                        <asp:Label runat="server" AssociatedControlID="ddlExamYear" Text="Exam Year" CssClass="form-label" />
+                        <asp:Label runat="server" AssociatedControlID="ddlExamYear" Text="Semester Odd/Even" CssClass="form-label" />
                         <asp:DropDownList ID="ddlExamYear" runat="server" CssClass="form-control"
-                            AutoPostBack="true" OnSelectedIndexChanged="ddlExamYear_SelectedIndexChanged" />
+                            AutoPostBack="true" OnSelectedIndexChanged="ddlSemester_SelectedIndexChanged" />
                     </div>
 
-                    <div class="col-md-4">
-                        <asp:Label runat="server" AssociatedControlID="ddlExamMonth" Text="Exam Month" CssClass="form-label" />
-                        <%-- Value should be Exam_ID; Text can be 1-Jan, 2-Feb, etc. --%>
-                        <asp:DropDownList ID="ddlExamMonth" runat="server" CssClass="form-control" />
-                    </div>
+                    
 
                     <div class="col-md-4">
                         <asp:Label runat="server" AssociatedControlID="ddlProgramme" Text="Programme" CssClass="form-label" />
@@ -60,21 +56,25 @@
 
                 <%-- Hidden page-level payment mode list for your existing code-behind LoadPaymentModes() call --%>
                 <asp:DropDownList ID="ddlPaymentMode" runat="server" CssClass="form-control" Style="display:none;" />
-
-               <!-- Caution note above grid -->
-<div class="alert alert-warning fw-semibold">
+                <div class="alert alert-warning fw-semibold">
     ⚠ Please verify student details before saving or updating payment records.
 </div>
-<asp:Label ID="lblCaution" runat="server" ForeColor="Red" EnableViewState="false" />
+                <asp:Label ID="lblCaution" runat="server" ForeColor="Red" EnableViewState="false" />
 <br />
-
-<asp:GridView ID="gvStudents" runat="server" AutoGenerateColumns="False"
+              <asp:GridView ID="gvStudents" runat="server" AutoGenerateColumns="False"
     CssClass="table table-bordered table-striped"
     DataKeyNames="Sem_History_ID,Exam_ID,Payment_ID"
     OnRowDataBound="gvStudents_RowDataBound"
     OnRowCommand="gvStudents_RowCommand">
 
     <Columns>
+        <asp:TemplateField HeaderText="S.No">
+    <ItemTemplate>
+        <%# Container.DataItemIndex + 1 %>
+    </ItemTemplate>
+    <ItemStyle CssClass="text-center px-3 py-2" />
+    <HeaderStyle CssClass="bg-light fw-bold text-center px-3 py-2" />
+</asp:TemplateField>
         <asp:BoundField DataField="Register_Number" HeaderText="Reg No" />
         <asp:BoundField DataField="Student_Name" HeaderText="Name" />
 
@@ -134,3 +134,4 @@
         </asp:UpdatePanel>
     </div>
 </asp:Content>
+

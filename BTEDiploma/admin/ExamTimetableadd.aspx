@@ -17,21 +17,14 @@
 
                 <!-- Dropdown Filters -->
                 <div class="row mb-3 justify-content-center">
-                    <div class="col-md-3 text-center">
-                        <asp:Label runat="server" Text="Academic Year" CssClass="form-label d-block" />
-                        <asp:DropDownList ID="ddlAcademicYear" runat="server" CssClass="form-control" AutoPostBack="true" OnSelectedIndexChanged="DropdownsChanged" />
-                    </div>
-                </div>
-
-                <div class="row mb-3">
-                    <div class="col-md-3">
-                        <asp:Label runat="server" Text="Year" CssClass="form-label" />
-                        <asp:DropDownList ID="ddlExamYear" runat="server" CssClass="form-control" AutoPostBack="true" OnSelectedIndexChanged="DropdownsChanged" />
-                    </div>
-                    <div class="col-md-3">
-                        <asp:Label runat="server" Text="Month" CssClass="form-label" />
-                        <asp:DropDownList ID="ddlExamMonth" runat="server" CssClass="form-control" AutoPostBack="true" OnSelectedIndexChanged="DropdownsChanged" />
-                    </div>
+    <div class="col-md-3 text-center">
+        <asp:Label runat="server" Text="Academic Year" CssClass="form-label d-block" />
+        <asp:DropDownList ID="ddlAcademicYear" runat="server" CssClass="form-control" AutoPostBack="true" OnSelectedIndexChanged="DropdownsChanged" />
+    </div>
+    <div class="col-md-3 text-center">
+        <asp:Label runat="server" Text="Semester" CssClass="form-label d-block" />
+        <asp:DropDownList ID="ddlSemester" runat="server" CssClass="form-control" AutoPostBack="true" OnSelectedIndexChanged="DropdownsChanged" />
+    </div>
                     <div class="col-md-3">
                         <asp:Label runat="server" Text="Programme" CssClass="form-label" />
                         <asp:DropDownList ID="ddlProgramme" runat="server" CssClass="form-control" AutoPostBack="true" OnSelectedIndexChanged="ddlProgramme_SelectedIndexChanged" />

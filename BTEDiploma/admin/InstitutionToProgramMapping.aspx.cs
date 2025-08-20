@@ -1,43 +1,110 @@
 ﻿using System;
-using System.Web.UI.WebControls;
-using System.Data;
-using BTEDiploma.sqlhelper;
+using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using BTEDiploma.sqlhelper;
 
 namespace BTEDiploma.admin
 {
-    public partial class InstitutionToProgramMapping : System.Web.UI.Page
+    public partial class InstituteProgramMapping : System.Web.UI.Page
     {
-
-        ManagesystemdataDAO SuperAdminDao = new ManagesystemdataDAO();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+                BindInstitutionTypes();
+
                 BindInstitutions();
+
                 BindPrograms();
                 pnlAddNew.Visible = false;
             }
         }
 
+        private void BindInstitutionTypes()
+        {
+            DataTable dt = ManagesystemdataDAO.GetAllInstitutionTypes(); // Should return Institution_Type_Name
+
+            ddlInstitutionType.DataSource = dt;
+            ddlInstitutionType.DataTextField = "Institution_Type_Description";
+            ddlInstitutionType.DataValueField = "Institution_Type_ID"; // Use name as value too
+            ddlInstitutionType.DataBind();
+
+            ddlInstitutionType.Items.Insert(0, new ListItem("--Select Type--", ""));
+        }
+
+
+
+        protected void ddlInstitutionType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selectedTypeId;
+            if (int.TryParse(ddlInstitutionType.SelectedValue, out selectedTypeId))
+            {
+                BindInstitutionsByType(selectedTypeId);
+            }
+            else
+            {
+                ddlInstitution.Items.Clear();
+                ddlInstitution.Items.Insert(0, new ListItem("--Select--", ""));
+            }
+        }
+
+
+        private void BindInstitutionsByType(int institutionTypeId)
+        {
+            DataTable dt = ManagesystemdataDAO.GetInstitutionsByType(institutionTypeId);
+
+            dt.Columns.Add("InstDisplay", typeof(string));
+            foreach (DataRow row in dt.Rows)
+            {
+                row["InstDisplay"] = $"{row["Inst_Code"]} - {row["Inst_Name"]}";
+            }
+
+            ddlInstitution.DataSource = dt;
+            ddlInstitution.DataTextField = "InstDisplay";
+            ddlInstitution.DataValueField = "Inst_Code";
+            ddlInstitution.DataBind();
+            ddlInstitution.Items.Insert(0, new ListItem("--Select--", ""));
+        }
+
+
+
         private void BindInstitutions()
         {
-            DataTable dt = SuperAdminDao.GetAllInstitutions();
+
+            var dao = new ManagesystemdataDAO();
+            DataTable dt = dao.GetAllInstitutions();
+
+
+            // Add a new column to combine name and code
+            dt.Columns.Add("InstDisplay", typeof(string));
+            foreach (DataRow row in dt.Rows)
+            {
+                row["InstDisplay"] = $"{row["Inst_Code"]} - {row["Inst_Name"]}";
+            }
+
             ddlInstitution.DataSource = dt;
-            ddlInstitution.DataTextField = "Inst_Name";
-            ddlInstitution.DataValueField = "Inst_Code";
+            ddlInstitution.DataTextField = "InstDisplay"; // Show both code and name
+            ddlInstitution.DataValueField = "Inst_Code";  // Value is still just the code
             ddlInstitution.DataBind();
             ddlInstitution.Items.Insert(0, new ListItem("--Select--", ""));
         }
 
         private void BindPrograms()
         {
-            DataTable dt = SuperAdminDao.GetAllPrograms();
+            var dao = new ManagesystemdataDAO();
+
+            DataTable dt = dao.GetAllPrograms();
             ddlProgram.DataSource = dt;
             ddlProgram.DataTextField = "Program_Name";
             ddlProgram.DataValueField = "Program_Code";
             ddlProgram.DataBind();
         }
+
 
         protected void ddlInstitution_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -53,8 +120,8 @@ namespace BTEDiploma.admin
         private void BindGrid()
         {
             int instCode = Convert.ToInt32(ddlInstitution.SelectedValue);
-
-            DataTable dt = SuperAdminDao.GetProgramMappingsByInstitution(instCode);
+            var dao = new ManagesystemdataDAO();
+            DataTable dt = dao.GetProgramMappingsByInstitution(instCode);
             gvMappings.DataSource = dt;
             gvMappings.DataBind();
         }
@@ -71,7 +138,8 @@ namespace BTEDiploma.admin
 
             try
             {
-                bool success = SuperAdminDao.InsertInstitutionProgramMapping(
+                var dao = new ManagesystemdataDAO();
+                bool success = dao.InsertInstitutionProgramMapping(
                     instCode, progId, year, intake, isActive, isAided);
 
                 if (success)
@@ -131,7 +199,8 @@ namespace BTEDiploma.admin
             bool isAided = ((CheckBox)row.Cells[4].Controls[0]).Checked;
 
             // Call your DAO method to update the row
-            bool updated = SuperAdminDao.UpdateInstitutionProgramMapping(instCode, progId, affiliationYear, intake, isActive, isAided);
+            var dao = new ManagesystemdataDAO();
+            bool updated = dao.UpdateInstitutionProgramMapping(instCode, progId, affiliationYear, intake, isActive, isAided);
 
             if (updated)
             {

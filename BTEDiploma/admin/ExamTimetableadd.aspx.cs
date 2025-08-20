@@ -20,74 +20,49 @@ namespace BTEDiploma.admin
             try
             {
                 // Populate Academic Year
-                var ds = dao.GetExamHierarchy();
+                var ds = dao.GetExamHierarchy(); // This calls your SP usp_GetExamHierarchy
                 ddlAcademicYear.DataSource = ds.Tables[0];
                 ddlAcademicYear.DataTextField = "Academic_Year";
-                ddlAcademicYear.DataValueField = "Academic_Year";
+                ddlAcademicYear.DataValueField = "Academic_Year_ID"; // Use ID internally
                 ddlAcademicYear.DataBind();
                 ddlAcademicYear.Items.Insert(0, new ListItem("Select", ""));
 
                 // Populate Programme
                 var dtProgrammes = dao.GetProgrammeList();
                 ddlProgramme.DataSource = dtProgrammes;
-                //ddlProgramme.DataTextField = "Program_Name";  // Make sure this column exists
+                ddlProgramme.DataTextField = "Program_Name"; // Make sure this exists
                 ddlProgramme.DataValueField = "Program_Code";
                 ddlProgramme.DataBind();
                 ddlProgramme.Items.Insert(0, new ListItem("Select", ""));
             }
             catch (Exception ex)
             {
-                // Log error
                 System.Diagnostics.Debug.WriteLine($"LoadDropdowns error: {ex.Message}");
             }
         }
 
         protected void DropdownsChanged(object sender, EventArgs e)
         {
-            string academic = ddlAcademicYear.SelectedValue;
-
-            // When Academic Year changes: Populate Exam Year and reset Month/Course Grid
-            if (sender == ddlAcademicYear)
+            try
             {
-                var dtYears = dao.GetExamYears(academic);
-                ddlExamYear.DataSource = dtYears;
-                ddlExamYear.DataTextField = "Exam_Year";
-                ddlExamYear.DataValueField = "Exam_Year";
-                ddlExamYear.DataBind();
-                ddlExamYear.Items.Insert(0, new ListItem("Select", ""));
+                if (sender == ddlAcademicYear && !string.IsNullOrEmpty(ddlAcademicYear.SelectedValue))
+                {
+                    // Populate Semester based on selected Academic Year
+                    var dtSem = dao.GetSemestersByAcademicYear(Convert.ToInt32(ddlAcademicYear.SelectedValue));
+                    ddlSemester.DataSource = dtSem;
+                    ddlSemester.DataTextField = "Name";    // Display Name
+                    ddlSemester.DataValueField = "sem_ID"; // Use sem_ID internally
+                    ddlSemester.DataBind();
+                    ddlSemester.Items.Insert(0, new ListItem("Select", ""));
+                }
 
-                ddlExamMonth.Items.Clear();
-                ddlExamMonth.Items.Insert(0, new ListItem("Select", ""));
-
+                // Reset Grid when either dropdown changes
                 gvCourses.DataSource = null;
                 gvCourses.DataBind();
             }
-
-            // When Exam Year or Academic Year changes: Populate Exam Months as "1 - Jan", ..., "12 - Dec"
-            if ((sender == ddlExamYear || sender == ddlAcademicYear) &&
-                !string.IsNullOrEmpty(ddlExamYear.SelectedValue) &&
-                ddlExamYear.SelectedValue != "Select")
+            catch (Exception ex)
             {
-                if (int.TryParse(ddlExamYear.SelectedValue, out int year))
-                {
-                    var dtMonths = dao.GetExamMonths(academic, year);
-                    ddlExamMonth.Items.Clear();
-                    ddlExamMonth.Items.Insert(0, new ListItem("Select", ""));
-
-                    foreach (DataRow row in dtMonths.Rows)
-                    {
-                        if (int.TryParse(row["Exam_Month"].ToString(), out int month))
-                        {
-                            string monthName = new DateTime(2000, month, 1).ToString("MMM"); // "Jan", "Feb", etc.
-                            ddlExamMonth.Items.Add(new ListItem($"{month} - {monthName}", month.ToString()));
-                        }
-                    }
-                }
-                else
-                {
-                    ddlExamMonth.Items.Clear();
-                    ddlExamMonth.Items.Insert(0, new ListItem("Select", ""));
-                }
+                System.Diagnostics.Debug.WriteLine($"DropdownsChanged error: {ex.Message}");
             }
         }
 
@@ -97,33 +72,24 @@ namespace BTEDiploma.admin
             try
             {
                 if (!string.IsNullOrEmpty(ddlProgramme.SelectedValue) &&
-                    ddlProgramme.SelectedValue != "Select" &&
                     !string.IsNullOrEmpty(ddlAcademicYear.SelectedValue) &&
-                    !string.IsNullOrEmpty(ddlExamYear.SelectedValue) &&
-                    !string.IsNullOrEmpty(ddlExamMonth.SelectedValue))
+                    !string.IsNullOrEmpty(ddlSemester.SelectedValue))
                 {
-                    int examId = dao.GetExamId(ddlAcademicYear.SelectedValue, ddlExamYear.SelectedValue, ddlExamMonth.SelectedValue);
-                    var dt = dao.GetCoursesByProgrammeWithTimetable(ddlProgramme.SelectedValue, examId);
+                    // Get exam_ID for AcademicYear + Semester
+                    int examId = dao.GetExamIdByAcademicYearAndSemester(
+                        Convert.ToInt32(ddlAcademicYear.SelectedValue),
+                        Convert.ToInt32(ddlSemester.SelectedValue)
+                    );
 
-                    // Verify the data structure
-                    if (dt != null && dt.Columns.Contains("CourseCode")) // Check if column exists
-                    {
-                        gvCourses.DataKeyNames = new string[] { "CourseCode" }; // Set DataKey
-                        gvCourses.DataSource = dt;
-                        gvCourses.DataBind();
-                    }
-                    else
-                    {
-                        // Handle missing column
-                        System.Diagnostics.Debug.WriteLine("Course_Code column not found in data source");
-                        gvCourses.DataSource = null;
-                        gvCourses.DataBind();
-                    }
+                    var dtCourses = dao.GetCoursesByProgrammeWithTimetable(ddlProgramme.SelectedValue, examId);
+
+                    gvCourses.DataKeyNames = new string[] { "CourseCode" };
+                    gvCourses.DataSource = dtCourses;
+                    gvCourses.DataBind();
                 }
             }
             catch (Exception ex)
             {
-                // Log error
                 System.Diagnostics.Debug.WriteLine($"ddlProgramme_SelectedIndexChanged error: {ex.Message}");
             }
         }
@@ -133,7 +99,18 @@ namespace BTEDiploma.admin
         {
             try
             {
-                int examId = dao.GetExamId(ddlAcademicYear.SelectedValue, ddlExamYear.SelectedValue, ddlExamMonth.SelectedValue);
+                if (string.IsNullOrEmpty(ddlAcademicYear.SelectedValue) || string.IsNullOrEmpty(ddlSemester.SelectedValue))
+                {
+                    lblMessage.Text = "Please select Academic Year and Semester.";
+                    lblMessage.ForeColor = System.Drawing.Color.Red;
+                    return;
+                }
+
+                // Get examId using AcademicYear + Semester
+                int examId = dao.GetExamIdByAcademicYearAndSemester(
+                    Convert.ToInt32(ddlAcademicYear.SelectedValue),
+                    Convert.ToInt32(ddlSemester.SelectedValue)
+                );
 
                 if (examId <= 0)
                 {

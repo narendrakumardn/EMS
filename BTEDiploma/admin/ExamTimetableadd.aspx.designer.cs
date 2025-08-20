@@ -42,22 +42,13 @@ namespace BTEDiploma.admin
         protected global::System.Web.UI.WebControls.DropDownList ddlAcademicYear;
 
         /// <summary>
-        /// ddlExamYear control.
+        /// ddlSemester control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlExamYear;
-
-        /// <summary>
-        /// ddlExamMonth control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlExamMonth;
+        protected global::System.Web.UI.WebControls.DropDownList ddlSemester;
 
         /// <summary>
         /// ddlProgramme control.

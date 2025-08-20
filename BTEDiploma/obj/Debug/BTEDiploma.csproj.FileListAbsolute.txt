@@ -402,3 +402,338 @@ C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.cspr
 C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.csproj.Up2Date
 C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.dll
 C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.pdb
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\ClosedXML.dll
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\ClosedXML.Parser.dll
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.dll
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.Framework.dll
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\ExcelNumberFormat.dll
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.HashCode.dll
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\RBush.dll
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\SixLabors.Fonts.dll
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\System.Buffers.dll
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\System.Memory.dll
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\System.Numerics.Vectors.dll
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\ClosedXML.pdb
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\ClosedXML.xml
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\ClosedXML.Parser.xml
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.xml
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.Framework.xml
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\ExcelNumberFormat.xml
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.HashCode.xml
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\RBush.xml
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\SixLabors.Fonts.xml
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\System.Buffers.xml
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\System.Memory.xml
+C:\Users\pmudt\Desktop\EMS_bakup\BTEDiploma\BTEDiploma\bin\System.Numerics.Vectors.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\BTEDiploma.dll.config
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\BTEDiploma.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\BTEDiploma.pdb
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csc.exe
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csc.exe.config
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csc.rsp
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csi.exe
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csi.exe.config
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csi.rsp
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.AppContext.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Console.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.IO.Compression.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Net.Http.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.ValueTuple.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\vbc.exe
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\vbc.exe.config
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\vbc.rsp
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\VBCSCompiler.exe
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Antlr3.Runtime.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\BouncyCastle.Crypto.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.Parser.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Dapper.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.Framework.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\ExcelNumberFormat.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.HashCode.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Newtonsoft.Json.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\RBush.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\SixLabors.Fonts.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Buffers.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Memory.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Numerics.Vectors.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Web.Optimization.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\WebGrease.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.pdb
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.Parser.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Dapper.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.Framework.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\ExcelNumberFormat.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.HashCode.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\RBush.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\SixLabors.Fonts.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Buffers.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Memory.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Numerics.Vectors.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Web.Optimization.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Newtonsoft.Json.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Antlr3.Runtime.pdb
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.csproj.AssemblyReference.cache
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.csproj.CoreCompileInputs.cache
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.csproj.Up2Date
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.dll
+C:\Users\Sneha\Downloads\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.pdb
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\BTEDiploma.dll.config
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\BTEDiploma.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\BTEDiploma.pdb
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csc.exe
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csc.exe.config
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csc.rsp
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csi.exe
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csi.exe.config
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csi.rsp
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.Managed.Core.targets
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.AppContext.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Collections.Immutable.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Console.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Globalization.Calendars.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.IO.Compression.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.IO.FileSystem.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Net.Http.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Net.Sockets.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Reflection.Metadata.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.ValueTuple.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Xml.XmlDocument.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Xml.XPath.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\vbc.exe
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\vbc.exe.config
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\vbc.rsp
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\VBCSCompiler.exe
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\VBCSCompiler.exe.config
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Antlr3.Runtime.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\BouncyCastle.Crypto.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.Parser.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Dapper.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.Framework.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ExcelNumberFormat.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.HashCode.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.ScriptManager.WebForms.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Web.Infrastructure.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Newtonsoft.Json.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\RBush.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\SixLabors.Fonts.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Buffers.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Memory.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Numerics.Vectors.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Threading.Tasks.Extensions.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Web.Optimization.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\WebGrease.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.pdb
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.Parser.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Dapper.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.Framework.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ExcelNumberFormat.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.HashCode.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\RBush.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\SixLabors.Fonts.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Buffers.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Memory.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Numerics.Vectors.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Threading.Tasks.Extensions.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Web.Optimization.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Newtonsoft.Json.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Antlr3.Runtime.pdb
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.csproj.AssemblyReference.cache
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.csproj.CoreCompileInputs.cache
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.csproj.Up2Date
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.dll
+D:\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.pdb
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\BTEDiploma.dll.config
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\BTEDiploma.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\BTEDiploma.pdb
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csc.exe
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csc.exe.config
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csc.rsp
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csi.exe
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csi.exe.config
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\csi.rsp
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.AppContext.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Console.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.IO.Compression.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Net.Http.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Net.Sockets.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.ValueTuple.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Xml.XPath.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\vbc.exe
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\vbc.exe.config
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\vbc.rsp
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\VBCSCompiler.exe
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Antlr3.Runtime.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\BouncyCastle.Crypto.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.Parser.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Dapper.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.Framework.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ExcelNumberFormat.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.HashCode.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Newtonsoft.Json.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\RBush.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\SixLabors.Fonts.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Buffers.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Memory.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Numerics.Vectors.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Web.Optimization.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\WebGrease.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.pdb
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ClosedXML.Parser.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Dapper.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\DocumentFormat.OpenXml.Framework.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\ExcelNumberFormat.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.Bcl.HashCode.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\RBush.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\SixLabors.Fonts.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Buffers.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Memory.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Numerics.Vectors.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\System.Web.Optimization.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Newtonsoft.Json.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Antlr3.Runtime.pdb
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.csproj.AssemblyReference.cache
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.csproj.CoreCompileInputs.cache
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.csproj.Up2Date
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.dll
+C:\Users\sys\Downloads\BTEDiploma (2)\BTEDiploma\BTEDiploma\BTEDiploma\obj\Debug\BTEDiploma.pdb
