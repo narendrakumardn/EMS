@@ -203,10 +203,14 @@
 </script>
 
     
-
-
         <script>
             function goToForgotPassword() {
+                window.location.href = 'ForgotPassword1.aspx';
+            }
+        </script>
+
+        <script>
+            function goToForgotPassword1() {
         var userType = document.getElementById('<%= hdnUserType.ClientID %>').value;
     window.location.href = 'ForgotPassword.aspx?usertype=' + encodeURIComponent(userType);
        }

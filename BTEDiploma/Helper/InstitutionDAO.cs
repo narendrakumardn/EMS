@@ -14,6 +14,16 @@ namespace BTEDiploma.Helper
         public int Inst_Code { get; set; }
         public string Inst_Name { get; set; }
     }
+    public class SemesterResult
+    {
+        public int StatusCode { get; set; }
+        public string Message { get; set; }
+        public List<Semester> Semesters { get; set; }
+    }
+    public class Semester
+    {
+        public int SemesterNo { get; set; }
+    }
 
     public class InstitutionResult
     {
@@ -60,5 +70,43 @@ namespace BTEDiploma.Helper
             return result;
         }
 
+        public static SemesterResult GetSemesterListByInst(int instituteCode)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+        new SqlParameter("@Inst_Code", instituteCode)
+            };
+
+            DataSet ds = SQLHelper.ExecuteStoredProcedureWithDataset("sp_GetSemesterListByInstitution", parameters);
+
+            var result = new SemesterResult();
+            result.Semesters = new List<Semester>();
+
+            if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                result.StatusCode = 200;
+                result.Message = "Success";
+
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    result.Semesters.Add(new Semester
+                    {
+                        SemesterNo = Convert.ToInt32(row["Semester"])
+                    });
+                }
+            }
+            else
+            {
+                result.StatusCode = 400;
+                result.Message = "No data returned.";
+            }
+
+            return result;
+        }
+
+
     }
 }
+
+
+   

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition"
+        xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+
+  <!-- Data source uses in-memory DataSet -->
+  <DataSources>
+    <DataSource Name="IAReportDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>c1c9f3a3-1111-2222-3333-444444444444</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+
+  <!-- DataSet matches IAData table in your XSD -->
+  <DataSets>
+    <DataSet Name="IADataSource">
+      <Query>
+        <DataSourceName>IAReportDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Register_Number"><DataField>Register_Number</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Name"><DataField>Name</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Sem"><DataField>Sem</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
+        <Field Name="Course_Code"><DataField>Course_Code</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Course_Name"><DataField>Course_Name</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Assessment_ID"><DataField>Assessment_ID</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
+        <Field Name="Assessment_Name"><DataField>Assessment_Name</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Max_Marks"><DataField>Max_Marks</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="Marks"><DataField>Marks</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="IsTotal"><DataField>IsTotal</DataField><rd:TypeName>System.Boolean</rd:TypeName></Field>
+        <Field Name="TotalMarks"><DataField>TotalMarks</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="CourseOrder"><DataField>CourseOrder</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>IAReportDataSet</rd:DataSetName>
+        <rd:TableName>IAData</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+
+  <!-- parameter: how many courses per page -->
+  <ReportParameters>
+    <ReportParameter Name="PageCourseCount">
+      <DataType>Integer</DataType>
+      <DefaultValue><Values><Value>2</Value></Values></DefaultValue>
+      <Prompt>Courses Per Page</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+
+          <!-- OUTER TABLIX: ONE ROW ONLY (to satisfy row hierarchy rule) -->
+          <Tablix Name="lstStudent">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn><Width>19cm</Width></TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <!-- Single innermost row -->
+                <TablixRow>
+                  <Height>10cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <!-- Container so we can place multiple items within one row -->
+                        <Rectangle Name="rcStudentBlock">
+                          <ReportItems>
+
+                            <!-- Student Header (simple 1-row tablix) -->
+                            <Tablix Name="tblStudentHeader">
+                              <TablixBody>
+                                <TablixColumns>
+                                  <TablixColumn><Width>6cm</Width></TablixColumn>
+                                  <TablixColumn><Width>9cm</Width></TablixColumn>
+                                  <TablixColumn><Width>4cm</Width></TablixColumn>
+                                </TablixColumns>
+                                <TablixRows>
+                                  <TablixRow>
+                                    <Height>0.9cm</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="txtRegNo">
+                                            <Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Register_Number.Value</Value></TextRun></TextRuns></Paragraph></Paragraphs>
+                                            <Style><BackgroundColor>Gainsboro</BackgroundColor><FontWeight>Bold</FontWeight><PaddingLeft>4pt</PaddingLeft><Border><Color>LightGrey</Color><Style>Solid</Style></Border></Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="txtName">
+                                            <Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Name.Value</Value></TextRun></TextRuns></Paragraph></Paragraphs>
+                                            <Style><BackgroundColor>Gainsboro</BackgroundColor><FontWeight>Bold</FontWeight><PaddingLeft>4pt</PaddingLeft><Border><Color>LightGrey</Color><Style>Solid</Style></Border></Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="txtSem">
+                                            <Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Sem.Value</Value></TextRun></TextRuns></Paragraph></Paragraphs>
+                                            <Style><BackgroundColor>Gainsboro</BackgroundColor><FontWeight>Bold</FontWeight><TextAlign>Right</TextAlign><PaddingRight>4pt</PaddingRight><Border><Color>LightGrey</Color><Style>Solid</Style></Border></Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                </TablixRows>
+                              </TablixBody>
+                              <TablixColumnHierarchy><TablixMembers><TablixMember/><TablixMember/><TablixMember/></TablixMembers></TablixColumnHierarchy>
+                              <TablixRowHierarchy><TablixMembers><TablixMember/></TablixMembers></TablixRowHierarchy>
+                              <Style><Border><Style>None</Style></Border></Style>
+                            </Tablix>
+
+                            <!-- BATCH TABLIX: one detail row per batch, with page break BETWEEN -->
+                            <Tablix Name="tblBatches">
+                              <TablixBody>
+                                <TablixColumns>
+                                  <TablixColumn><Width>19cm</Width></TablixColumn>
+                                </TablixColumns>
+                                <TablixRows>
+                                  <TablixRow>
+                                    <Height>8.8cm</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <!-- inner rectangle to hold matrix for a batch -->
+                                          <Rectangle Name="rcBatch">
+                                            <ReportItems>
+                                              <!-- MATRIX: Assessment rows x Course_Code dynamic columns (filtered to current batch via parent group) -->
+                                              <Tablix Name="mxCourses">
+                                                <TablixBody>
+                                                  <TablixColumns>
+                                                    <!-- Assessment name column -->
+                                                    <TablixColumn><Width>5cm</Width></TablixColumn>
+                                                    <!-- Dynamic course columns will render here (same width each) -->
+                                                  </TablixColumns>
+                                                  <TablixRows>
+                                                    <!-- Header row (Assessment / Course headers) -->
+                                                    <TablixRow>
+                                                      <Height>0.8cm</Height>
+                                                      <TablixCells>
+                                                        <TablixCell>
+                                                          <CellContents>
+                                                            <Textbox Name="hdrAssess">
+                                                              <Paragraphs><Paragraph><TextRuns><TextRun><Value>Assessment</Value></TextRun></TextRuns></Paragraph></Paragraphs>
+                                                              <Style><BackgroundColor>LightSteelBlue</BackgroundColor><FontWeight>Bold</FontWeight><Border><Color>LightGrey</Color><Style>Solid</Style></Border><PaddingLeft>4pt</PaddingLeft></Style>
+                                                            </Textbox>
+                                                          </CellContents>
+                                                        </TablixCell>
+                                                      </TablixCells>
+                                                    </TablixRow>
+
+                                                    <!-- Data row (values) -->
+                                                    <TablixRow>
+                                                      <Height>0.65cm</Height>
+                                                      <TablixCells>
+                                                        <!-- Assessment Name -->
+                                                        <TablixCell>
+                                                          <CellContents>
+                                                            <Textbox Name="tdAssessName">
+                                                              <Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Assessment_Name.Value</Value></TextRun></TextRuns></Paragraph></Paragraphs>
+                                                              <Style><Border><Color>LightGrey</Color><Style>Solid</Style></Border><PaddingLeft>4pt</PaddingLeft></Style>
+                                                            </Textbox>
+                                                          </CellContents>
+                                                        </TablixCell>
+                                                      </TablixCells>
+                                                    </TablixRow>
+                                                  </TablixRows>
+                                                </TablixBody>
+
+                                                <!-- Column hierarchy: 1 static + dynamic Course_Code with batch filter -->
+                                                <TablixColumnHierarchy>
+                                                  <TablixMembers>
+                                                    <TablixMember/> <!-- static assessment column -->
+                                                    <TablixMember>
+                                                      <Group Name="grpCourseCol">
+                                                        <GroupExpressions>
+                                                          <GroupExpression>=Fields!Course_Code.Value</GroupExpression>
+                                                        </GroupExpressions>
+                                                        <Filters>
+                                                          <Filter>
+                                                            <FilterExpression>=Ceiling(CDec(Fields!CourseOrder.Value) / CDec(Parameters!PageCourseCount.Value))</FilterExpression>
+                                                            <Operator>Equal</Operator>
+                                                            <FilterValues>
+                                                              <FilterValue>=Fields!__BatchKey.Value</FilterValue>
+                                                            </FilterValues>
+                                                          </Filter>
+                                                        </Filters>
+                                                      </Group>
+                                                      <TablixHeader>
+                                                        <Size>0.8cm</Size>
+                                                        <CellContents>
+                                                          <Textbox Name="thCourse">
+                                                            <Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Course_Code.Value</Value></TextRun></TextRuns></Paragraph></Paragraphs>
+                                                            <Style><BackgroundColor>LightSteelBlue</BackgroundColor><TextAlign>Center</TextAlign><FontWeight>Bold</FontWeight><Border><Color>LightGrey</Color><Style>Solid</Style></Border></Style>
+                                                          </Textbox>
+                                                        </CellContents>
+                                                      </TablixHeader>
+                                                    </TablixMember>
+                                                  </TablixMembers>
+                                                </TablixColumnHierarchy>
+
+                                                <!-- Row hierarchy: Assessment group -->
+                                                <TablixRowHierarchy>
+                                                  <TablixMembers>
+                                                    <TablixMember>
+                                                      <Group Name="grpAssess">
+                                                        <GroupExpressions>
+                                                          <GroupExpression>=Fields!Assessment_Name.Value</GroupExpression>
+                                                        </GroupExpressions>
+                                                      </Group>
+                                                      <SortExpressions>
+                                                        <SortExpression>
+                                                          <Value>=IIF(Fields!IsTotal.Value, 9999, Fields!Assessment_ID.Value)</Value>
+                                                        </SortExpression>
+                                                      </SortExpressions>
+                                                    </TablixMember>
+                                                  </TablixMembers>
+                                                </TablixRowHierarchy>
+
+                                                <!-- Data cell for dynamic course columns -->
+                                                <DataElementOutput>Output</DataElementOutput>
+                                                <Style><Border><Style>None</Style></Border></Style>
+
+                                                <!-- Tablix cells for the dynamic column's data must be defined via TablixCell in the data row.
+                                                     SSRS auto-duplicates the last cell across dynamic columns.
+                                                     We put an additional cell template into the second row via TablixCells below. -->
+                                                <TablixBody>
+                                                  <TablixRows>
+                                                    <TablixRow>
+                                                      <Height>0.8cm</Height>
+                                                      <TablixCells>
+                                                        <TablixCell />
+                                                        <TablixCell>
+                                                          <CellContents>
+                                                            <Textbox Name="thCourseTemplate">
+                                                              <Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Course_Code.Value</Value></TextRun></TextRuns></Paragraph></Paragraphs>
+                                                              <Style><BackgroundColor>LightSteelBlue</BackgroundColor><TextAlign>Center</TextAlign><FontWeight>Bold</FontWeight><Border><Color>LightGrey</Color><Style>Solid</Style></Border></Style>
+                                                            </Textbox>
+                                                          </CellContents>
+                                                        </TablixCell>
+                                                      </TablixCells>
+                                                    </TablixRow>
+                                                    <TablixRow>
+                                                      <Height>0.65cm</Height>
+                                                      <TablixCells>
+                                                        <TablixCell />
+                                                        <TablixCell>
+                                                          <CellContents>
+                                                            <Textbox Name="tdMarksTemplate">
+                                                              <Paragraphs><Paragraph><TextRuns><TextRun><Value>=IIF(Fields!IsTotal.Value, Fields!TotalMarks.Value, Fields!Marks.Value)</Value></TextRun></TextRuns></Paragraph></Paragraphs>
+                                                              <Style>
+                                                                <TextAlign>Center</TextAlign>
+                                                                <Border><Color>LightGrey</Color><Style>Solid</Style></Border>
+                                                                <Color>=IIF(Fields!IsTotal.Value AND Fields!TotalMarks.Value &lt; (0.4 * 50), "Red", "Black")</Color>
+                                                                <FontWeight>=IIF(Fields!IsTotal.Value AND Fields!TotalMarks.Value &lt; (0.4 * 50), "Bold", "Normal")</FontWeight>
+                                                              </Style>
+                                                            </Textbox>
+                                                          </CellContents>
+                                                        </TablixCell>
+                                                      </TablixCells>
+                                                    </TablixRow>
+                                                  </TablixRows>
+                                                  <TablixColumns>
+                                                    <TablixColumn><Width>5cm</Width></TablixColumn>
+                                                    <TablixColumn><Width>7cm</Width></TablixColumn>
+                                                  </TablixColumns>
+                                                </TablixBody>
+
+                                              </Tablix>
+                                            </ReportItems>
+                                            <KeepTogether>true</KeepTogether>
+                                          </Rectangle>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                </TablixRows>
+                              </TablixBody>
+                              <TablixColumnHierarchy><TablixMembers><TablixMember/></TablixMembers></TablixColumnHierarchy>
+                              <TablixRowHierarchy>
+                                <TablixMembers>
+                                  <TablixMember>
+                                    <Group Name="grpCourseBatch">
+                                      <GroupExpressions>
+                                        <GroupExpression>=Ceiling(CDec(Fields!CourseOrder.Value) / CDec(Parameters!PageCourseCount.Value))</GroupExpression>
+                                      </GroupExpressions>
+                                      <PageBreak><BreakLocation>Between</BreakLocation></PageBreak>
+                                    </Group>
+                                    <!-- expose batch key for child filter -->
+                                    <Variables>
+                                      <Variable Name="__BatchKey"><Value>=Ceiling(CDec(Fields!CourseOrder.Value) / CDec(Parameters!PageCourseCount.Value))</Value></Variable>
+                                    </Variables>
+                                  </TablixMember>
+                                </TablixMembers>
+                              </TablixRowHierarchy>
+                              <Style><Border><Style>None</Style></Border></Style>
+                            </Tablix>
+
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                        </Rectangle>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy><TablixMembers><TablixMember/></TablixMembers></TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="grpStudent">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!Register_Number.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>IADataSource</DataSetName>
+            <Style><Border><Style>None</Style></Border></Style>
+          </Tablix>
+
+        </ReportItems>
+        <Height>10in</Height>
+        <Style />
+      </Body>
+
+      <Width>21cm</Width>
+      <Page>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>1cm</LeftMargin>
+        <RightMargin>1cm</RightMargin>
+        <TopMargin>1cm</TopMargin>
+        <BottomMargin>1cm</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>8f8d2c0f-e1b6-4c9d-8b4b-1e2d7ee0abcd</rd:ReportID>
+</Report>

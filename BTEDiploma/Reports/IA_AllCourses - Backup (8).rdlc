@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition"
+        xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+
+  <!-- DataSource: IAReportDataSet -->
+  <DataSources>
+    <DataSource Name="IAReportDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>6b6a7b0f-2c7d-47a0-b6b2-5f9d5f5c6a10</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+
+  <!-- DataSet: IADataSource (table IAData) -->
+  <DataSets>
+    <DataSet Name="IADataSource">
+      <Query>
+        <DataSourceName>IAReportDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Register_Number">
+          <DataField>Register_Number</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Sem">
+          <DataField>Sem</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Course_Code">
+          <DataField>Course_Code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Assessment_Name">
+          <DataField>Assessment_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IsTotal">
+          <DataField>IsTotal</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Marks">
+          <DataField>Marks</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TotalMarks">
+          <DataField>TotalMarks</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CourseOrder">
+          <DataField>CourseOrder</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>IAReportDataSet</rd:DataSetName>
+        <rd:TableName>IAData</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+
+  <!-- One parameter just to match your viewer code (optional) -->
+  <ReportParameters>
+    <ReportParameter Name="PageCourseCount">
+      <DataType>Integer</DataType>
+      <Prompt>Courses Per Page</Prompt>
+      <DefaultValue>
+        <Values>
+          <Value>2</Value>
+        </Values>
+      </DefaultValue>
+    </ReportParameter>
+  </ReportParameters>
+
+  <!-- 2010 schema requires ReportSections wrapper -->
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <!-- Simple tablix to prove binding works -->
+          <Tablix Name="tblSanity">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn><Width>4cm</Width></TablixColumn>
+                <TablixColumn><Width>8cm</Width></TablixColumn>
+                <TablixColumn><Width>2cm</Width></TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <!-- Header -->
+                <TablixRow>
+                  <Height>0.8cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="hdrReg">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Register No</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <BackgroundColor>Gainsboro</BackgroundColor>
+                            <Border><Style>Solid</Style></Border>
+                            <PaddingLeft>3pt</PaddingLeft>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="hdrName">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Name</Value>
+                                  <Style><FontWeight>Bold</FontWeight></Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <BackgroundColor>Gainsboro</BackgroundColor>
+                            <Border><Style>Solid</Style></Border>
+                            <PaddingLeft>3pt</PaddingLeft>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="hdrSem">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Sem</Value>
+                                  <Style><FontWeight>Bold</FontWeight></Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <BackgroundColor>Gainsboro</BackgroundColor>
+                            <Border><Style>Solid</Style></Border>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+
+                <!-- Detail -->
+                <TablixRow>
+                  <Height>0.7cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="txtReg">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun><Value>=Fields!Register_Number.Value</Value></TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style><Border><Style>Solid</Style></Border><PaddingLeft>3pt</PaddingLeft></Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="txtName">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun><Value>=Fields!Name.Value</Value></TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style><Border><Style>Solid</Style></Border><PaddingLeft>3pt</PaddingLeft></Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="txtSem">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun><Value>=Fields!Sem.Value</Value></TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style><Border><Style>Solid</Style></Border><TextAlign>Right</TextAlign></Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="DetailGroup" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>IADataSource</DataSetName>
+            <Style><Border><Style>None</Style></Border></Style>
+          </Tablix>
+        </ReportItems>
+        <Height>4in</Height>
+        <Style />
+      </Body>
+
+      <Width>20cm</Width>
+      <Page>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>1cm</LeftMargin>
+        <RightMargin>1cm</RightMargin>
+        <TopMargin>1cm</TopMargin>
+        <BottomMargin>1cm</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>de83c62e-6a42-49f3-9a3f-4e3a2f6caa11</rd:ReportID>
+</Report>

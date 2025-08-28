@@ -15,7 +15,7 @@ namespace BTEDiploma.Helper
             {
 
                 MailMessage mail = new MailMessage();
-                mail.From = new MailAddress("reshmaattavar@gmail.com"); // use your Gmail
+                mail.From = new MailAddress("narendra.ait@gmail.com"); // use your Gmail
 
                 mail.To.Add(toEmail);
                 mail.Subject = "OTP for Password Reset";

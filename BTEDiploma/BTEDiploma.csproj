@@ -72,8 +72,32 @@
       <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="MSCaptcha">
       <HintPath>C:\Users\LENOVO\Downloads\MSCaptcha\MSCaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="QuestPDF, Version=2025.7.0.0, Culture=neutral, PublicKeyToken=0f3c2b2315ff52c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\QuestPDF.2025.7.0\lib\netstandard2.0\QuestPDF.dll</HintPath>
     </Reference>
     <Reference Include="RBush, Version=4.0.0.0, Culture=neutral, PublicKeyToken=c77e27b81f4d0187, processorArchitecture=MSIL">
       <HintPath>..\packages\RBush.Signed.4.0.0\lib\net47\RBush.dll</HintPath>
@@ -168,9 +192,13 @@
     <Content Include="admin\StudentUploadApproval.aspx" />
     <Content Include="admin\StudentUploadBulk.aspx" />
     <Content Include="admin\StudentUploadViewAndApprove.aspx" />
-    <Content Include="College\Attendance.aspx" />
+    <Content Include="College\CondonableStudents.aspx" />
+    <Content Include="College\StudentAttendance.aspx" />
+    <Content Include="College\StudentInternals.aspx" />
     <Content Include="College\StudentUpload.aspx" />
+    <Content Include="College\ViewAndApproveExamEligibleStudent.aspx" />
     <Content Include="College\ViewStudent.aspx" />
+    <Content Include="College\ViewStudentAttendanceReport.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -204,9 +232,11 @@
     <Content Include="images\dtelogo.jpg" />
     <Content Include="images\vidhana_soudha.jpg" />
     <Content Include="login\ForgotPassword.aspx" />
+    <Content Include="login\ForgotPassword1.aspx" />
     <Content Include="login\Login.aspx" />
     <Content Include="login\Register.aspx" />
     <Content Include="login\SessionExpired.aspx" />
+    <Content Include="Reports\IAReport.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -236,6 +266,17 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="MainSite.master" />
+    <Content Include="Reports\IAReportDataSet.xsc">
+      <DependentUpon>IAReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\IAReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IAReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\IAReportDataSet.xss">
+      <DependentUpon>IAReportDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -264,6 +305,19 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site1.Master" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -387,12 +441,26 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="College\Attendance.aspx.cs">
-      <DependentUpon>Attendance.aspx</DependentUpon>
+    <Compile Include="College\CondonableStudents.aspx.cs">
+      <DependentUpon>CondonableStudents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="College\Attendance.aspx.designer.cs">
-      <DependentUpon>Attendance.aspx</DependentUpon>
+    <Compile Include="College\CondonableStudents.aspx.designer.cs">
+      <DependentUpon>CondonableStudents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="College\StudentAttendance.aspx.cs">
+      <DependentUpon>StudentAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="College\StudentAttendance.aspx.designer.cs">
+      <DependentUpon>StudentAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="College\StudentInternals.aspx.cs">
+      <DependentUpon>StudentInternals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="College\StudentInternals.aspx.designer.cs">
+      <DependentUpon>StudentInternals.aspx</DependentUpon>
     </Compile>
     <Compile Include="College\StudentUpload.aspx.cs">
       <DependentUpon>StudentUpload.aspx</DependentUpon>
@@ -402,12 +470,26 @@
       <DependentUpon>StudentUpload.aspx</DependentUpon>
     </Compile>
     <Compile Include="College\StudentUploadModel.cs" />
+    <Compile Include="College\ViewAndApproveExamEligibleStudent.aspx.cs">
+      <DependentUpon>ViewAndApproveExamEligibleStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="College\ViewAndApproveExamEligibleStudent.aspx.designer.cs">
+      <DependentUpon>ViewAndApproveExamEligibleStudent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="College\ViewStudent.aspx.cs">
       <DependentUpon>ViewStudent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="College\ViewStudent.aspx.designer.cs">
       <DependentUpon>ViewStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="College\ViewStudentAttendanceReport.aspx.cs">
+      <DependentUpon>ViewStudentAttendanceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="College\ViewStudentAttendanceReport.aspx.designer.cs">
+      <DependentUpon>ViewStudentAttendanceReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -446,6 +528,7 @@
     <Compile Include="Helper\ExcelHelper.cs" />
     <Compile Include="Helper\ForgotPasswordDao.cs" />
     <Compile Include="Helper\InstitutionDAO.cs" />
+    <Compile Include="Helper\InternalmarksDAO.cs" />
     <Compile Include="Helper\ManagesystemdataDAO.cs" />
     <Compile Include="Helper\ProgramDAO.cs" />
     <Compile Include="Helper\RegisterDao.cs" />
@@ -469,6 +552,13 @@
     </Compile>
     <Compile Include="login\ForgotPassword.aspx.designer.cs">
       <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login\ForgotPassword1.aspx.cs">
+      <DependentUpon>ForgotPassword1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login\ForgotPassword1.aspx.designer.cs">
+      <DependentUpon>ForgotPassword1.aspx</DependentUpon>
     </Compile>
     <Compile Include="login\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -499,6 +589,18 @@
       <DependentUpon>MainSite.master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\IAReport.aspx.cs">
+      <DependentUpon>IAReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\IAReport.aspx.designer.cs">
+      <DependentUpon>IAReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\IAReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IAReportDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -513,6 +615,7 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -534,6 +637,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\IA_AllCourses.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -565,7 +671,9 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\QuestPDF.2025.7.0\build\net4\QuestPDF.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\QuestPDF.2025.7.0\build\net4\QuestPDF.targets'))" />
   </Target>
+  <Import Project="..\packages\QuestPDF.2025.7.0\build\net4\QuestPDF.targets" Condition="Exists('..\packages\QuestPDF.2025.7.0\build\net4\QuestPDF.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

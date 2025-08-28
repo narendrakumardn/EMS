@@ -130,7 +130,7 @@ namespace BTEDiploma.login
             {
                 bool updated = ForgotPasswordDao.UpdatePassword(userType, username, newPassword);
 
-                if (updated)
+                if (updated)    
                 {
                     ForgotPasswordDao.UpdateFirstLoginFlag(username, userType);
                     Session.Remove("FirstLoginUser");

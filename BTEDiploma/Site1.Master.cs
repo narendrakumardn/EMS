@@ -77,24 +77,26 @@ namespace BTEDiploma
                 {
                     string topMenuUrl = topLevelMenu["MenuUrl"]?.ToString()?.ToLower() ?? "";
                     string topMenuText = topLevelMenu["MenuName"].ToString();
+                    string topMenuIcon = topLevelMenu.Table.Columns.Contains("MenuIcon")
+                        ? topLevelMenu["MenuIcon"]?.ToString()
+                        : "fa-circle"; // fallback icon
 
                     HtmlGenericControl li = new HtmlGenericControl("li");
                     li.Attributes["class"] = "nav-item dropdown";
 
                     HtmlAnchor a = new HtmlAnchor
                     {
-                        InnerText = topMenuText,
-                        HRef = "#"
+                        HRef = "#",
+                        InnerHtml = $"<i class='fa {topMenuIcon}'></i> {topMenuText}"
                     };
                     a.Attributes["class"] = "nav-link dropdown-toggle";
                     a.Attributes["data-bs-toggle"] = "dropdown";
                     a.Attributes["role"] = "button";
 
                     HtmlGenericControl dropdownMenu = new HtmlGenericControl("ul");
-                    dropdownMenu.Attributes["class"] = "dropdown-menu";
+                    dropdownMenu.Attributes["class"] = "dropdown-menu custom-dropdown"; // custom CSS
 
                     int menuId = Convert.ToInt32(topLevelMenu["MenuID"]);
-
                     bool isActive = false;
 
                     if (groupedMenus.ContainsKey(menuId)) // Has children
@@ -103,15 +105,18 @@ namespace BTEDiploma
                         {
                             string childUrl = childMenu["MenuUrl"].ToString().ToLower();
                             string childText = childMenu["MenuName"].ToString();
+                            string childIcon = childMenu.Table.Columns.Contains("MenuIcon")
+                                ? childMenu["MenuIcon"]?.ToString()
+                                : "fa-angle-right";
 
                             HtmlGenericControl childLi = new HtmlGenericControl("li");
                             HtmlAnchor childA = new HtmlAnchor
                             {
                                 HRef = ResolveUrl(childUrl),
-                                InnerText = childText
+                                InnerHtml = $"<i class='fa {childIcon}'></i> {childText}"
                             };
 
-                            childA.Attributes["class"] = "dropdown-item";
+                            childA.Attributes["class"] = "dropdown-item text-white"; // text white
 
                             // Active check
                             if (currentUrl.Contains(childUrl))
@@ -124,7 +129,7 @@ namespace BTEDiploma
                             dropdownMenu.Controls.Add(childLi);
                         }
 
-                        // Apply active class to parent if any child is active
+                        // Active class for parent
                         if (isActive)
                         {
                             a.Attributes["class"] += " active";
@@ -135,11 +140,11 @@ namespace BTEDiploma
                     }
                     else
                     {
-                        // No children, render as single link
+                        // No children, direct link
                         a.HRef = ResolveUrl(topMenuUrl);
                         a.Attributes["class"] = "nav-link";
+                        a.InnerHtml = $"<i class='fa {topMenuIcon}'></i> {topMenuText}";
 
-                        // Active check for top-level menu
                         if (currentUrl.Contains(topMenuUrl))
                         {
                             a.Attributes["class"] += " active";

@@ -66,3 +66,32 @@
         font-size: 1.4rem;
     }
 }
+/* Navigation */
+.navbar {
+    background-color: #198754; /* ✅ Green navbar */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Dropdown default background */
+.dropdown-menu {
+    background-color: #198754; /* ✅ Green background */
+    border-radius: 8px;
+}
+
+/* Dropdown items */
+.dropdown-item {
+    color: #fff !important;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+    .dropdown-item:hover {
+        background-color: #146c43 !important; /* ✅ Darker green on hover */
+        color: #fff !important;
+    }
+

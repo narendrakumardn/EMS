@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition"
+        xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="IAReportDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>e1234567-abcd-1234-abcd-1234567890ab</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+
+  <DataSets>
+    <DataSet Name="IADataSource">
+      <Query>
+        <DataSourceName>IAReportDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Register_Number"><DataField>Register_Number</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Name"><DataField>Name</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Sem"><DataField>Sem</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
+        <Field Name="Course_Code"><DataField>Course_Code</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Assessment_Name"><DataField>Assessment_Name</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Marks"><DataField>Marks</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="TotalMarks"><DataField>TotalMarks</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="IsTotal"><DataField>IsTotal</DataField><rd:TypeName>System.Boolean</rd:TypeName></Field>
+        <Field Name="CourseOrder"><DataField>CourseOrder</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>IAReportDataSet</rd:DataSetName>
+        <rd:TableName>IAData</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="tblMain">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn><Width>3cm</Width></TablixColumn>
+                <TablixColumn><Width>5cm</Width></TablixColumn>
+                <TablixColumn><Width>2cm</Width></TablixColumn>
+                <TablixColumn><Width>9cm</Width></TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.8cm</Height>
+                  <TablixCells>
+                    <TablixCell><CellContents><Textbox Name="txtRegNo"><Value>=Fields!Register_Number.Value</Value></Textbox></CellContents></TablixCell>
+                    <TablixCell><CellContents><Textbox Name="txtName"><Value>=Fields!Name.Value</Value></Textbox></CellContents></TablixCell>
+                    <TablixCell><CellContents><Textbox Name="txtSem"><Value>=Fields!Sem.Value</Value></Textbox></CellContents></TablixCell>
+                    <TablixCell><CellContents><Textbox Name="txtAssess"><Value>=Fields!Course_Code.Value &amp; "_" &amp; Fields!Assessment_Name.Value</Value></Textbox></CellContents></TablixCell>
+                  </TablixCells>
+                </TablixRow>
+
+                <TablixRow>
+                  <Height>0.6cm</Height>
+                  <TablixCells>
+                    <TablixCell><CellContents><Textbox Name="txtBlank1"><Value /></Textbox></CellContents></TablixCell>
+                    <TablixCell><CellContents><Textbox Name="txtBlank2"><Value /></Textbox></CellContents></TablixCell>
+                    <TablixCell><CellContents><Textbox Name="txtBlank3"><Value /></Textbox></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="txtMarks">
+                          <Value>=IIF(Fields!IsTotal.Value, Fields!TotalMarks.Value, Fields!Marks.Value)</Value>
+                          <Style>
+                            <Color>=IIF(Fields!IsTotal.Value AND Fields!TotalMarks.Value &lt; (0.4 * 50), "Red", "Black")</Color>
+                            <FontWeight>=IIF(Fields!IsTotal.Value AND Fields!TotalMarks.Value &lt; (0.4 * 50), "Bold", "Normal")</FontWeight>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers><TablixMember /><TablixMember /><TablixMember /><TablixMember /></TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember><Group Name="grpRow1" /></TablixMember>
+                <TablixMember><Group Name="grpRow2" /></TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+          </Tablix>
+        </ReportItems>
+        <Height>5in</Height>
+      </Body>
+      <Page>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>1cm</LeftMargin>
+        <RightMargin>1cm</RightMargin>
+        <TopMargin>1cm</TopMargin>
+        <BottomMargin>1cm</BottomMargin>
+      </Page>
+    </ReportSection>
+  </ReportSections>
+
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>12345678-abcd-efgh-ijkl-1234567890ab</rd:ReportID>
+</Report>

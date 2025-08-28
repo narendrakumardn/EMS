@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+	<AutoRefresh>0</AutoRefresh>
+	<DataSources>
+		<DataSource Name="IAReportDataSet">
+			<ConnectionProperties>
+				<DataProvider>System.Data.DataSet</DataProvider>
+				<ConnectString>/* Local Connection */</ConnectString>
+			</ConnectionProperties>
+			<rd:DataSourceID>ee78fdaa-396f-42e3-91d9-f483562fe7f3</rd:DataSourceID>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="IADataSource">
+			<Query>
+				<DataSourceName>IAReportDataSet</DataSourceName>
+				<CommandText>/* Local Query */</CommandText>
+			</Query>
+			<Fields>
+				<Field Name="Register_Number">
+					<DataField>Register_Number</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="Name">
+					<DataField>Name</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="Sem">
+					<DataField>Sem</DataField>
+					<rd:TypeName>System.Int32</rd:TypeName>
+				</Field>
+				<Field Name="Course_Code">
+					<DataField>Course_Code</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="Course_Name">
+					<DataField>Course_Name</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="Assessment_ID">
+					<DataField>Assessment_ID</DataField>
+					<rd:TypeName>System.Int32</rd:TypeName>
+				</Field>
+				<Field Name="Assessment_Name">
+					<DataField>Assessment_Name</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="Max_Marks">
+					<DataField>Max_Marks</DataField>
+					<rd:TypeName>System.Decimal</rd:TypeName>
+				</Field>
+				<Field Name="Marks">
+					<DataField>Marks</DataField>
+					<rd:TypeName>System.Decimal</rd:TypeName>
+				</Field>
+				<Field Name="IsTotal">
+					<DataField>IsTotal</DataField>
+					<rd:TypeName>System.Boolean</rd:TypeName>
+				</Field>
+				<Field Name="TotalMarks">
+					<DataField>TotalMarks</DataField>
+					<rd:TypeName>System.Decimal</rd:TypeName>
+				</Field>
+				<Field Name="CourseOrder">
+					<DataField>CourseOrder</DataField>
+					<rd:TypeName>System.Int32</rd:TypeName>
+				</Field>
+			</Fields>
+			<rd:DataSetInfo>
+				<rd:DataSetName>IAReportDataSet</rd:DataSetName>
+				<rd:TableName>IAData</rd:TableName>
+			</rd:DataSetInfo>
+		</DataSet>
+	</DataSets>
+	<ReportSections>
+		<ReportSection>
+			<Body>
+				<ReportItems>
+					<Textbox Name="txtReportTitle">
+						<CanGrow>true</CanGrow>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Internal Assessment Report</Value>
+										<Style>
+											<FontSize>16pt</FontSize>
+											<FontWeight>Bold</FontWeight>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Center</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<Top>0.5cm</Top>
+						<Left>0.5cm</Left>
+						<Height>1cm</Height>
+						<Width>26cm</Width>
+						<Style>
+							<PaddingBottom>10pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Tablix Name="tablixStudentCourses">
+						<TablixBody>
+							<TablixColumns>
+								<TablixColumn>
+									<Width>26cm</Width>
+								</TablixColumn>
+							</TablixColumns>
+							<TablixRows>
+								<TablixRow>
+									<Height>0.8cm</Height>
+									<TablixCells>
+										<TablixCell>
+											<CellContents>
+												<Rectangle Name="rectStudentHeader">
+													<ReportItems>
+														<Textbox Name="txtRegNumber">
+															<Paragraphs>
+																<Paragraph>
+																	<TextRuns>
+																		<TextRun>
+																			<Value>="Register Number: " &amp; Fields!Register_Number.Value</Value>
+																			<Style>
+																				<FontSize>12pt</FontSize>
+																				<FontWeight>Bold</FontWeight>
+																			</Style>
+																		</TextRun>
+																	</TextRuns>
+																	<Style />
+																</Paragraph>
+															</Paragraphs>
+															<Height>0.8cm</Height>
+															<Width>8cm</Width>
+															<Style>
+																<VerticalAlign>Middle</VerticalAlign>
+																<PaddingLeft>5pt</PaddingLeft>
+															</Style>
+														</Textbox>
+														<Textbox Name="txtStudentNameHeader">
+															<Paragraphs>
+																<Paragraph>
+																	<TextRuns>
+																		<TextRun>
+																			<Value>="Name: " &amp; Fields!Name.Value</Value>
+																			<Style>
+																				<FontSize>12pt</FontSize>
+																				<FontWeight>Bold</FontWeight>
+																			</Style>
+																		</TextRun>
+																	</TextRuns>
+																	<Style />
+																</Paragraph>
+															</Paragraphs>
+															<Left>8cm</Left>
+															<Height>0.8cm</Height>
+															<Width>12cm</Width>
+															<ZIndex>1</ZIndex>
+															<Style>
+																<VerticalAlign>Middle</VerticalAlign>
+																<PaddingLeft>5pt</PaddingLeft>
+															</Style>
+														</Textbox>
+														<Textbox Name="txtSemHeader">
+															<Paragraphs>
+																<Paragraph>
+																	<TextRuns>
+																		<TextRun>
+																			<Value>="Semester: " &amp; Fields!Sem.Value</Value>
+																			<Style>
+																				<FontSize>12pt</FontSize>
+																				<FontWeight>Bold</FontWeight>
+																			</Style>
+																		</TextRun>
+																	</TextRuns>
+																	<Style />
+																</Paragraph>
+															</Paragraphs>
+															<Left>20cm</Left>
+															<Height>0.8cm</Height>
+															<Width>6cm</Width>
+															<ZIndex>2</ZIndex>
+															<Style>
+																<VerticalAlign>Middle</VerticalAlign>
+																<PaddingLeft>5pt</PaddingLeft>
+															</Style>
+														</Textbox>
+													</ReportItems>
+													<Style>
+														<Border>
+															<Color>Black</Color>
+															<Style>Solid</Style>
+															<Width>1pt</Width>
+														</Border>
+														<BackgroundColor>LightBlue</BackgroundColor>
+													</Style>
+												</Rectangle>
+											</CellContents>
+										</TablixCell>
+									</TablixCells>
+								</TablixRow>
+								<TablixRow>
+									<Height>2cm</Height>
+									<TablixCells>
+										<TablixCell>
+											<CellContents>
+												<Tablix Name="tablixCourseAssessments">
+													<TablixCorner>
+														<TablixCornerRows>
+															<TablixCornerRow>
+																<TablixCornerCell>
+																	<CellContents>
+																		<Textbox Name="txtCourseCorner">
+																			<Paragraphs>
+																				<Paragraph>
+																					<TextRuns>
+																						<TextRun>
+																							<Value>Course Details</Value>
+																							<Style>
+																								<FontSize>10pt</FontSize>
+																								<FontWeight>Bold</FontWeight>
+																							</Style>
+																						</TextRun>
+																					</TextRuns>
+																					<Style>
+																						<TextAlign>Center</TextAlign>
+																					</Style>
+																				</Paragraph>
+																			</Paragraphs>
+																			<Style>
+																				<Border>
+																					<Color>Black</Color>
+																					<Style>Solid</Style>
+																				</Border>
+																				<BackgroundColor>LightGray</BackgroundColor>
+																				<VerticalAlign>Middle</VerticalAlign>
+																				<PaddingTop>2pt</PaddingTop>
+																			</Style>
+																		</Textbox>
+																	</CellContents>
+																</TablixCornerCell>
+															</TablixCornerRow>
+														</TablixCornerRows>
+													</TablixCorner>
+													<TablixBody>
+														<TablixColumns>
+															<TablixColumn>
+																<Width>2.5cm</Width>
+															</TablixColumn>
+														</TablixColumns>
+														<TablixRows>
+															<TablixRow>
+																<Height>0.7cm</Height>
+																<TablixCells>
+																	<TablixCell>
+																		<CellContents>
+																			<Textbox Name="valMarks">
+																				<Paragraphs>
+																					<Paragraph>
+																						<TextRuns>
+																							<TextRun>
+																								<Value>=IIF(Fields!IsTotal.Value, Fields!TotalMarks.Value, Fields!Marks.Value)</Value>
+																								<Style>
+																									<FontSize>10pt</FontSize>
+																									<FontWeight>=IIF(Fields!IsTotal.Value, "Bold", "Normal")</FontWeight>
+																									<Color>=IIF(Fields!IsTotal.Value AND Fields!TotalMarks.Value &lt; 20, "Red", "Black")</Color>
+																								</Style>
+																							</TextRun>
+																						</TextRuns>
+																						<Style>
+																							<TextAlign>Center</TextAlign>
+																						</Style>
+																					</Paragraph>
+																				</Paragraphs>
+																				<Style>
+																					<Border>
+																						<Color>Black</Color>
+																						<Style>Solid</Style>
+																					</Border>
+																					<VerticalAlign>Middle</VerticalAlign>
+																					<PaddingTop>2pt</PaddingTop>
+																				</Style>
+																			</Textbox>
+																		</CellContents>
+																	</TablixCell>
+																</TablixCells>
+															</TablixRow>
+														</TablixRows>
+													</TablixBody>
+													<TablixColumnHierarchy>
+														<TablixMembers>
+															<TablixMember>
+																<Group Name="cgAssessments">
+																	<GroupExpressions>
+																		<GroupExpression>=Fields!Assessment_Name.Value</GroupExpression>
+																	</GroupExpressions>
+																</Group>
+																<SortExpressions>
+																	<SortExpression>
+																		<Value>=IIF(Fields!Assessment_Name.Value="Total", 9999, Fields!Assessment_ID.Value)</Value>
+																	</SortExpression>
+																</SortExpressions>
+																<TablixHeader>
+																	<Size>0.7cm</Size>
+																	<CellContents>
+																		<Textbox Name="hdrAssessmentName">
+																			<Paragraphs>
+																				<Paragraph>
+																					<TextRuns>
+																						<TextRun>
+																							<Value>=Fields!Assessment_Name.Value</Value>
+																							<Style>
+																								<FontSize>10pt</FontSize>
+																								<FontWeight>Bold</FontWeight>
+																							</Style>
+																						</TextRun>
+																					</TextRuns>
+																					<Style>
+																						<TextAlign>Center</TextAlign>
+																					</Style>
+																				</Paragraph>
+																			</Paragraphs>
+																			<Style>
+																				<Border>
+																					<Color>Black</Color>
+																					<Style>Solid</Style>
+																				</Border>
+																				<BackgroundColor>LightSteelBlue</BackgroundColor>
+																				<VerticalAlign>Middle</VerticalAlign>
+																				<PaddingTop>2pt</PaddingTop>
+																			</Style>
+																		</Textbox>
+																	</CellContents>
+																</TablixHeader>
+															</TablixMember>
+														</TablixMembers>
+													</TablixColumnHierarchy>
+													<TablixRowHierarchy>
+														<TablixMembers>
+															<TablixMember>
+																<TablixHeader>
+																	<Size>8cm</Size>
+																	<CellContents>
+																		<Textbox Name="txtCourseInfo">
+																			<Paragraphs>
+																				<Paragraph>
+																					<TextRuns>
+																						<TextRun>
+																							<Value>=Fields!Course_Code.Value &amp; " - " &amp; Fields!Course_Name.Value</Value>
+																							<Style>
+																								<FontSize>10pt</FontSize>
+																								<FontWeight>Bold</FontWeight>
+																							</Style>
+																						</TextRun>
+																					</TextRuns>
+																					<Style>
+																						<TextAlign>Left</TextAlign>
+																					</Style>
+																				</Paragraph>
+																			</Paragraphs>
+																			<Style>
+																				<Border>
+																					<Color>Black</Color>
+																					<Style>Solid</Style>
+																				</Border>
+																				<BackgroundColor>LightYellow</BackgroundColor>
+																				<VerticalAlign>Middle</VerticalAlign>
+																				<PaddingLeft>5pt</PaddingLeft>
+																				<PaddingTop>2pt</PaddingTop>
+																			</Style>
+																		</Textbox>
+																	</CellContents>
+																</TablixHeader>
+															</TablixMember>
+														</TablixMembers>
+													</TablixRowHierarchy>
+													<DataSetName>IADataSource</DataSetName>
+													<Style />
+												</Tablix>
+											</CellContents>
+										</TablixCell>
+									</TablixCells>
+								</TablixRow>
+								<TablixRow>
+									<Height>1cm</Height>
+									<TablixCells>
+										<TablixCell>
+											<CellContents>
+												<Textbox Name="txtGap">
+													<Paragraphs>
+														<Paragraph>
+															<TextRuns>
+																<TextRun>
+																	<Value> </Value>
+																	<Style />
+																</TextRun>
+															</TextRuns>
+															<Style />
+														</Paragraph>
+													</Paragraphs>
+													<Style />
+												</Textbox>
+											</CellContents>
+										</TablixCell>
+									</TablixCells>
+								</TablixRow>
+							</TablixRows>
+						</TablixBody>
+						<TablixColumnHierarchy>
+							<TablixMembers>
+								<TablixMember />
+							</TablixMembers>
+						</TablixColumnHierarchy>
+						<TablixRowHierarchy>
+							<TablixMembers>
+								<TablixMember />
+								<TablixMember>
+									<Group Name="rgCourses">
+										<GroupExpressions>
+											<GroupExpression>=Fields!Course_Code.Value</GroupExpression>
+										</GroupExpressions>
+									</Group>
+									<SortExpressions>
+										<SortExpression>
+											<Value>=Fields!CourseOrder.Value</Value>
+										</SortExpression>
+									</SortExpressions>
+								</TablixMember>
+								<TablixMember />
+							</TablixMembers>
+						</TablixRowHierarchy>
+						<DataSetName>IADataSource</DataSetName>
+						<Top>2cm</Top>
+						<Left>0.5cm</Left>
+						<Height>3.8cm</Height>
+						<Width>26cm</Width>
+						<Style />
+					</Tablix>
+					<Rectangle Name="rectSignatures">
+						<ReportItems>
+							<Textbox Name="txtHOD">
+								<Paragraphs>
+									<Paragraph>
+										<TextRuns>
+											<TextRun>
+												<Value>
+													HOD
+													_________________
+												</Value>
+												<Style>
+													<FontSize>12pt</FontSize>
+													<FontWeight>Bold</FontWeight>
+												</Style>
+											</TextRun>
+										</TextRuns>
+										<Style>
+											<TextAlign>Center</TextAlign>
+										</Style>
+									</Paragraph>
+								</Paragraphs>
+								<Height>2cm</Height>
+								<Width>8cm</Width>
+								<Style>
+									<VerticalAlign>Bottom</VerticalAlign>
+								</Style>
+							</Textbox>
+							<Textbox Name="txtIAVerifier">
+								<Paragraphs>
+									<Paragraph>
+										<TextRuns>
+											<TextRun>
+												<Value>
+													IA Verifier
+													_________________
+												</Value>
+												<Style>
+													<FontSize>12pt</FontSize>
+													<FontWeight>Bold</FontWeight>
+												</Style>
+											</TextRun>
+										</TextRuns>
+										<Style>
+											<TextAlign>Center</TextAlign>
+										</Style>
+									</Paragraph>
+								</Paragraphs>
+								<Left>9cm</Left>
+								<Height>2cm</Height>
+								<Width>8cm</Width>
+								<ZIndex>1</ZIndex>
+								<Style>
+									<VerticalAlign>Bottom</VerticalAlign>
+								</Style>
+							</Textbox>
+							<Textbox Name="txtPrincipal">
+								<Paragraphs>
+									<Paragraph>
+										<TextRuns>
+											<TextRun>
+												<Value>
+													Principal
+													_________________
+												</Value>
+												<Style>
+													<FontSize>12pt</FontSize>
+													<FontWeight>Bold</FontWeight>
+												</Style>
+											</TextRun>
+										</TextRuns>
+										<Style>
+											<TextAlign>Center</TextAlign>
+										</Style>
+									</Paragraph>
+								</Paragraphs>
+								<Left>18cm</Left>
+								<Height>2cm</Height>
+								<Width>8cm</Width>
+								<ZIndex>2</ZIndex>
+								<Style>
+									<VerticalAlign>Bottom</VerticalAlign>
+								</Style>
+							</Textbox>
+						</ReportItems>
+						<KeepTogether>true</KeepTogether>
+						<Top>16cm</Top>
+						<Left>0.5cm</Left>
+						<Height>2cm</Height>
+						<Width>26cm</Width>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+						</Style>
+					</Rectangle>
+				</ReportItems>
+				<Height>19cm</Height>
+				<Style />
+			</Body>
+			<Width>27cm</Width>
+			<Page>
+				<PageHeight>21cm</PageHeight>
+				<PageWidth>29.7cm</PageWidth>
+				<LeftMargin>1cm</LeftMargin>
+				<RightMargin>1cm</RightMargin>
+				<TopMargin>1cm</TopMargin>
+				<BottomMargin>1cm</BottomMargin>
+				<Style />
+			</Page>
+		</ReportSection>
+	</ReportSections>
+	<rd:ReportUnitType>Cm</rd:ReportUnitType>
+	<rd:ReportID>ab2f0b0c-2c2e-42d0-99af-1a1dc6b7b777</rd:ReportID>
+</Report>

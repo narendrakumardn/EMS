@@ -15,6 +15,15 @@ namespace BTEDiploma.admin
     {
 
         /// <summary>
+        /// updProg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdateProgress updProg;
+
+        /// <summary>
         /// updMain control.
         /// </summary>
         /// <remarks>
@@ -42,15 +51,6 @@ namespace BTEDiploma.admin
         protected global::System.Web.UI.WebControls.DropDownList ddlExamYear;
 
         /// <summary>
-        /// ddlProgramme control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlProgramme;
-
-        /// <summary>
         /// ddlSemester control.
         /// </summary>
         /// <remarks>
@@ -58,6 +58,15 @@ namespace BTEDiploma.admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlSemester;
+
+        /// <summary>
+        /// ddlProgramme control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlProgramme;
 
         /// <summary>
         /// lblMessage control.

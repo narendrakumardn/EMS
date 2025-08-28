@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition"
+        xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+	<DataSources>
+		<DataSource Name="IAReportDataSet">
+			<ConnectionProperties>
+				<DataProvider>System.Data.DataSet</DataProvider>
+				<ConnectString>/* Local Connection */</ConnectString>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+
+	<DataSets>
+		<DataSet Name="IADataSource">
+			<Query>
+				<DataSourceName>IAReportDataSet</DataSourceName>
+				<CommandText>/* Local Query */</CommandText>
+			</Query>
+			<Fields>
+				<Field Name="Register_Number">
+					<DataField>Register_Number</DataField>
+				</Field>
+				<Field Name="Name">
+					<DataField>Name</DataField>
+				</Field>
+				<Field Name="Sem">
+					<DataField>Sem</DataField>
+				</Field>
+				<Field Name="Course_Code">
+					<DataField>Course_Code</DataField>
+				</Field>
+				<Field Name="Assessment_Name">
+					<DataField>Assessment_Name</DataField>
+				</Field>
+				<Field Name="Marks">
+					<DataField>Marks</DataField>
+				</Field>
+				<Field Name="TotalMarks">
+					<DataField>TotalMarks</DataField>
+				</Field>
+				<Field Name="IsTotal">
+					<DataField>IsTotal</DataField>
+				</Field>
+				<Field Name="CourseOrder">
+					<DataField>CourseOrder</DataField>
+				</Field>
+			</Fields>
+		</DataSet>
+	</DataSets>
+
+	<ReportParameters>
+		<ReportParameter Name="PageCourseCount">
+			<DataType>Integer</DataType>
+			<DefaultValue>
+				<Values>
+					<Value>2</Value>
+				</Values>
+			</DefaultValue>
+		</ReportParameter>
+	</ReportParameters>
+
+	<ReportSections>
+		<ReportSection>
+			<Body>
+				<ReportItems>
+					<!-- Your tablix/matrix goes here -->
+				</ReportItems>
+				<Height>5in</Height>
+			</Body>
+			<Width>10in</Width>
+			<Page>
+				<PageHeight>29.7cm</PageHeight>
+				<PageWidth>21cm</PageWidth>
+				<LeftMargin>1cm</LeftMargin>
+				<RightMargin>1cm</RightMargin>
+				<TopMargin>1cm</TopMargin>
+				<BottomMargin>1cm</BottomMargin>
+			</Page>
+		</ReportSection>
+	</ReportSections>
+</Report>

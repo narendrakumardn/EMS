@@ -118,6 +118,50 @@ namespace BTEDiploma.admin
                 ShowError("Could not load Exam sessions. " + ex.Message);
             }
         }
+        protected void ddlExamYear_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                gvStudents.DataSource = null;
+                gvStudents.DataBind();
+                lblMessage.Text = string.Empty;
+
+                if (string.IsNullOrEmpty(ddlAcademicYear.SelectedValue) ||
+                    string.IsNullOrEmpty(ddlExamYear.SelectedValue)) return;
+
+                // Use SelectedItem.Text (OddSem/EvenSem) instead of DataTextField
+                string oddEven = ddlExamYear.SelectedItem.Text;
+
+                // 🔹 Rebind semester dropdown based on Odd/Even
+                BindSemesterDropdown(oddEven);
+            }
+            catch (Exception ex)
+            {
+                ShowError("Could not filter semesters. " + ex.Message);
+            }
+        }
+
+        private void BindSemesterDropdown(string oddEven)
+        {
+            ddlSemester.Items.Clear();
+            ddlSemester.Items.Insert(0, new ListItem("--Select--", ""));
+
+            if (oddEven.Equals("OddSem", StringComparison.OrdinalIgnoreCase))
+            {
+                ddlSemester.Items.Add(new ListItem("1", "1"));
+                ddlSemester.Items.Add(new ListItem("3", "3"));
+                ddlSemester.Items.Add(new ListItem("5", "5"));
+            }
+            else if (oddEven.Equals("EvenSem", StringComparison.OrdinalIgnoreCase))
+            {
+                ddlSemester.Items.Add(new ListItem("2", "2"));
+                ddlSemester.Items.Add(new ListItem("4", "4"));
+                ddlSemester.Items.Add(new ListItem("6", "6"));
+            }
+        }
+
+
+
 
         protected void ddlSemester_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -155,7 +199,7 @@ namespace BTEDiploma.admin
                     .FirstOrDefault(r =>
                         r["Sem_ID"].ToString() == semId &&
                         r["Academic_cal_id"].ToString() == acadCalId);
-
+               
                 if (examRow == null)
                 {
                     ShowWarn("No Exam found for this Academic Year & Session.");
@@ -252,8 +296,15 @@ namespace BTEDiploma.admin
                 int paymentId = drv["Payment_ID"] == DBNull.Value ? 0 : Convert.ToInt32(drv["Payment_ID"]);
 
                 // set amount if present
+                // set amount (default 350 if missing)
                 if (txtAmount != null)
-                    txtAmount.Text = drv["Fee_Amount"] == DBNull.Value ? "" : Convert.ToDecimal(drv["Fee_Amount"]).ToString("F2");
+                {
+                    if (drv["Fee_Amount"] == DBNull.Value || string.IsNullOrEmpty(drv["Fee_Amount"].ToString()))
+                        txtAmount.Text = "350";
+                    else
+                        txtAmount.Text = Convert.ToDecimal(drv["Fee_Amount"]).ToString("F2");
+                }
+
 
                 // set payment mode selected value if exists
                 if (ddlMode != null && drv["Payment_Mode_ID"] != DBNull.Value)

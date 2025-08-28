@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IAReportDataSet" targetNamespace="http://tempuri.org/IAReportDataSet.xsd" xmlns:mstns="http://tempuri.org/IAReportDataSet.xsd" xmlns="http://tempuri.org/IAReportDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IAReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="IAReportDataSet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IAReportDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IAData" msprop:Generator_RowClassName="IADataRow" msprop:Generator_RowEvHandlerName="IADataRowChangeEventHandler" msprop:Generator_RowDeletedName="IADataRowDeleted" msprop:Generator_RowDeletingName="IADataRowDeleting" msprop:Generator_RowEvArgName="IADataRowChangeEvent" msprop:Generator_TablePropName="IAData" msprop:Generator_RowChangedName="IADataRowChanged" msprop:Generator_UserTableName="IAData" msprop:Generator_RowChangingName="IADataRowChanging" msprop:Generator_TableClassName="IADataDataTable" msprop:Generator_TableVarName="tableIAData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Register_Number_x0020_" msprop:Generator_UserColumnName="Register_Number " msprop:Generator_ColumnPropNameInTable="Register_Number_Column" msprop:Generator_ColumnPropNameInRow="Register_Number_" msprop:Generator_ColumnVarNameInTable="columnRegister_Number_" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" type="xs:string" minOccurs="0" />
+              <xs:element name="Sem" msprop:Generator_UserColumnName="Sem" msprop:Generator_ColumnPropNameInTable="SemColumn" msprop:Generator_ColumnPropNameInRow="Sem" msprop:Generator_ColumnVarNameInTable="columnSem" type="xs:int" minOccurs="0" />
+              <xs:element name="Course_Code" msprop:Generator_UserColumnName="Course_Code" msprop:Generator_ColumnPropNameInTable="Course_CodeColumn" msprop:Generator_ColumnPropNameInRow="Course_Code" msprop:Generator_ColumnVarNameInTable="columnCourse_Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Course_Name" msprop:Generator_UserColumnName="Course_Name" msprop:Generator_ColumnPropNameInTable="Course_NameColumn" msprop:Generator_ColumnPropNameInRow="Course_Name" msprop:Generator_ColumnVarNameInTable="columnCourse_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Assessment_ID" msprop:Generator_UserColumnName="Assessment_ID" msprop:Generator_ColumnPropNameInTable="Assessment_IDColumn" msprop:Generator_ColumnPropNameInRow="Assessment_ID" msprop:Generator_ColumnVarNameInTable="columnAssessment_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Assessment_Name" msprop:Generator_UserColumnName="Assessment_Name" msprop:Generator_ColumnPropNameInTable="Assessment_NameColumn" msprop:Generator_ColumnPropNameInRow="Assessment_Name" msprop:Generator_ColumnVarNameInTable="columnAssessment_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Max_Marks" msprop:Generator_UserColumnName="Max_Marks" msprop:Generator_ColumnPropNameInTable="Max_MarksColumn" msprop:Generator_ColumnPropNameInRow="Max_Marks" msprop:Generator_ColumnVarNameInTable="columnMax_Marks" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Marks" msprop:Generator_UserColumnName="Marks" msprop:Generator_ColumnPropNameInTable="MarksColumn" msprop:Generator_ColumnPropNameInRow="Marks" msprop:Generator_ColumnVarNameInTable="columnMarks" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IsTotal" msprop:Generator_UserColumnName="IsTotal" msprop:Generator_ColumnPropNameInTable="IsTotalColumn" msprop:Generator_ColumnPropNameInRow="IsTotal" msprop:Generator_ColumnVarNameInTable="columnIsTotal" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TotalMarks" msprop:Generator_UserColumnName="TotalMarks" msprop:Generator_ColumnPropNameInTable="TotalMarksColumn" msprop:Generator_ColumnPropNameInRow="TotalMarks" msprop:Generator_ColumnVarNameInTable="columnTotalMarks" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CourseOrder" msprop:Generator_UserColumnName="CourseOrder" msprop:Generator_ColumnPropNameInTable="CourseOrderColumn" msprop:Generator_ColumnPropNameInRow="CourseOrder" msprop:Generator_ColumnVarNameInTable="columnCourseOrder" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
